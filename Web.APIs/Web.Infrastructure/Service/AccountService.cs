@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -45,21 +46,23 @@ namespace Web.Infrastructure.Service
 
         public async Task<BaseResponse<TokenDTO>> LoginAsync(LoginDTO loginDto)
         {
-            if (loginDto == null)
-                return new BaseResponse<TokenDTO>(false, "بيانات الدخول مطلوبة");
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == loginDto.PhoneNumber);
+            if (user == null)
+                return new BaseResponse<TokenDTO>(false,"Invalid phone number or password");
 
-            var user = await _userManager.FindByEmailAsync(loginDto.Email);
-            if (user == null) return new BaseResponse<TokenDTO>(false, "البريد الاكتروني غير صحيح");
+            var isPasswordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+            if (!isPasswordValid)
+                return new BaseResponse<TokenDTO>(false, "Invalid phone number or password");
 
-            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
+            if (!user.PhoneNumberConfirmed)
+                return new BaseResponse<TokenDTO>(false, "Phone number not verified");
 
-            if (!result.Succeeded) return new BaseResponse<TokenDTO>(false, "كلمة السر غير صحيحة");
             var roles = await _userManager.GetRolesAsync(user);
             var res = new TokenDTO
             {
                 UserId = user.Id,
                 Email = user.Email,
-                gender = user.gender,
+                
               Name=user.UserName,
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
             };

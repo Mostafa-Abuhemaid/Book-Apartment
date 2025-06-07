@@ -13,3 +13,18 @@ F:\My Projects\Base-Repository\Web.APIs\Web.Domain\obj\Debug\net8.0\refint\Web.D
 F:\My Projects\Base-Repository\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.pdb
 F:\My Projects\Base-Repository\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.genruntimeconfig.cache
 F:\My Projects\Base-Repository\Web.APIs\Web.Domain\obj\Debug\net8.0\ref\Web.Domain.dll
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\bin\Debug\net8.0\Web.Domain.deps.json
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\bin\Debug\net8.0\Web.Domain.runtimeconfig.json
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\bin\Debug\net8.0\Web.Domain.dll
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\bin\Debug\net8.0\Web.Domain.pdb
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.csproj.AssemblyReference.cache
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.AssemblyInfoInputs.cache
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.AssemblyInfo.cs
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.csproj.CoreCompileInputs.cache
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.sourcelink.json
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.dll
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\refint\Web.Domain.dll
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.pdb
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\Web.Domain.genruntimeconfig.cache
+F:\Projects\Book-apartment\Web.APIs\Web.Domain\obj\Debug\net8.0\ref\Web.Domain.dll

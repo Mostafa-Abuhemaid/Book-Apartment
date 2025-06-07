@@ -10,6 +10,7 @@ namespace Web.Domain.Entites
 {
     public class AppUser : IdentityUser
     {
-   public Gender gender {  get; set; }
+       public Gender gender {  get; set; }
+        public ICollection<Property> properties { get; set; }  =new HashSet<Property>();
     }
 }

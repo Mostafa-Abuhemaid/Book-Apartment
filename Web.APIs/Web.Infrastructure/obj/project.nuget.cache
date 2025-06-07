@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QKnYs7Q1oEAhelGudxbSHgYk+w3EGCcSDdR0Tkp5+Zz0giS4uGnrHJFmqdJO3GzGiVqOv4/zY0gEZLQCnwj1oQ==",
+  "dgSpecHash": "hsElx41v2UK0uI3Tp7S45mRNcev/x8xqpX4uXcz5BNKvnP3SCD6V4miu7GMNIqHko1HrL3Slg/6ncVfumcgfiA==",
   "success": true,
-  "projectFilePath": "F:\\My Projects\\Base-Repository\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj",
+  "projectFilePath": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CS\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

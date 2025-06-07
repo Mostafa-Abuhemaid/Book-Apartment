@@ -14,8 +14,7 @@ namespace Web.Application.DTOs.AccountDTO
         public string Name { get; set; }
 
         public string Email { get; set; }
-        public Gender gender { get; set; }
-
+      
         public string Token { get; set; }
     }
 }
