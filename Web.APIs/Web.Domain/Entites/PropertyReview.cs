@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Web.Domain.Entites
 {
-    public class PropertyReview
+    public class PropertyReview : BaseClass<int>
     {
         public int PropertyId { get; set; }
         public Property Property { get; set; }

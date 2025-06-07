@@ -19,11 +19,14 @@ public class Property:BaseClass<int>
     public decimal Price { get; set; }
     public int Floor { get; set; }
     public PropertyType PropertyType { get; set; } //بيع او ايجار
+    public string? Address { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-
-   
+    public bool IsActive {  get; set; }=false;
     public string OwnerId { get; set; }
     public AppUser Owner { get; set; }
 
-    public ICollection<PropertyImage> Images { get; set; }
+    public ICollection<PropertyImage> Images { get; set; } = new List<PropertyImage>();
+    public ICollection<PropertyReview> Reviews { get; set; } = new List<PropertyReview>();
+
 }
