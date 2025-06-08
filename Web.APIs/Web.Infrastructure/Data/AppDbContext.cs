@@ -16,5 +16,54 @@ namespace Web.Infrastructure.Data
 
 
         }
+        public DbSet<Property> Properties { get; set; }
+        public DbSet<PropertyImage> PropertyImages { get; set; }
+        public DbSet<PropertyReview> PropertyReviews { get; set; }
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<Property>()
+            .HasMany(p => p.Images)
+            .WithOne(i => i.Property)
+            .HasForeignKey(i => i.PropertyId);
+            ////////////////
+            builder.Entity<Favorite>()
+        .HasKey(f => new { f.UserId, f.PropertyId });
+            ////////////////
+            builder.Entity<Favorite>()
+          .HasOne(f => f.User)
+          .WithMany()
+          .HasForeignKey(f => f.UserId);
+            //////////////
+            builder.Entity<Favorite>()
+                .HasOne(f => f.Property)
+                .WithMany()
+                .HasForeignKey(f => f.PropertyId);
+            ///////////////////////
+            builder.Entity<PropertyReview>()
+         .HasOne(r => r.Property)
+         .WithMany()
+         .HasForeignKey(r => r.PropertyId);
+            //////////////////////////
+            builder.Entity<PropertyReview>()
+                .HasOne(r => r.User)
+                .WithMany()
+                .HasForeignKey(r => r.UserId);
+
+            ////////////////////
+          
+            builder.Entity<Appointment>()
+                .HasOne(a => a.User)
+                .WithMany()
+                .HasForeignKey(a => a.UserId);
+
+            builder.Entity<Appointment>()
+                .HasOne(a => a.Property)
+                .WithMany()
+                .HasForeignKey(a => a.PropertyId);
+        }
     }
 }

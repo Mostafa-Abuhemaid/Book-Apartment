@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "4+8tPBmUteKcuFsNw6qpjkzYUofUu1izpYigk4PkJas=",
+  "Hash": "f5y+lbYdZeaus9lwJEmSIhqUMyMWdRxopgZ/obn0jN4=",
   "Source": "Web.APIs",
   "BasePath": "_content/Web.APIs",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Web.APIs\\wwwroot",
+      "Source": "Web.APIs",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "BasePath": "_content/Web.APIs",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

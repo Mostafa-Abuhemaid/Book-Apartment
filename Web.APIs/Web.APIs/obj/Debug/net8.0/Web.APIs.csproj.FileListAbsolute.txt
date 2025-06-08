@@ -348,3 +348,4 @@ F:\Projects\Book-apartment\Web.APIs\Web.APIs\obj\Debug\net8.0\refint\Web.APIs.dl
 F:\Projects\Book-apartment\Web.APIs\Web.APIs\obj\Debug\net8.0\Web.APIs.pdb
 F:\Projects\Book-apartment\Web.APIs\Web.APIs\obj\Debug\net8.0\Web.APIs.genruntimeconfig.cache
 F:\Projects\Book-apartment\Web.APIs\Web.APIs\obj\Debug\net8.0\ref\Web.APIs.dll
+F:\Projects\Book-apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\Web.APIs.staticwebassets.runtime.json

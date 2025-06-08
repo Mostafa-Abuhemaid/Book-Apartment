@@ -15,5 +15,6 @@ namespace Web.Domain.Entites
         public string? ProfileImage { get; set; }
         public ICollection<Property> properties { get; set; }  = new HashSet<Property>();
         public ICollection<Favorite> Favorites { get; set; } = new HashSet<Favorite>();
+        public ICollection<PropertyReview> PropertyReviews { get; set; } = new HashSet<PropertyReview>();
     }
 }

@@ -3,35 +3,63 @@
   "WorkspaceRootPath": "F:\\Projects\\Book-apartment\\Web.APIs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\entites\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Migrations\\20250608140748_intial create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Web.Infrastructure\\Migrations\\20250608140748_intial create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|f:\\projects\\book-apartment\\web.apis\\web.domain\\entites\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|f:\\projects\\book-apartment\\web.apis\\web.application\\dtos\\propertydto\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|solutionrelative:web.application\\dtos\\propertydto\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\entites\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|f:\\projects\\book-apartment\\web.apis\\web.domain\\entites\\viewingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\viewingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECCE2864-44C2-4A61-A563-40C0A4CFCAC9}|Web.Infrastructure\\Web.Infrastructure.csproj|f:\\projects\\book-apartment\\web.apis\\web.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECCE2864-44C2-4A61-A563-40C0A4CFCAC9}|Web.Infrastructure\\Web.Infrastructure.csproj|solutionrelative:web.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Migrations\\20250608131355_intial create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Web.Infrastructure\\Migrations\\20250608131355_intial create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50E198D3-C4BF-4E54-951D-111DA525555C}|Web.APIs\\Web.APIs.csproj|f:\\projects\\book-apartment\\web.apis\\web.apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50E198D3-C4BF-4E54-951D-111DA525555C}|Web.APIs\\Web.APIs.csproj|solutionrelative:web.apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|f:\\projects\\book-apartment\\web.apis\\web.domain\\entites\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\entites\\propertyreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\propertyreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.application\\dtos\\propertydto\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|solutionrelative:web.application\\dtos\\propertydto\\createpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|f:\\projects\\book-apartment\\web.apis\\web.application\\interfaces\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|solutionrelative:web.application\\interfaces\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\entites\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\entites\\propertyimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\propertyimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|f:\\projects\\book-apartment\\web.apis\\web.application\\dtos\\reviewdto\\getreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.application\\dtos\\reviewdto\\getreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|solutionrelative:web.application\\dtos\\reviewdto\\getreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|f:\\projects\\book-apartment\\web.apis\\web.application\\dtos\\reviewdto\\createreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.application\\dtos\\reviewdto\\createreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|solutionrelative:web.application\\dtos\\reviewdto\\createreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|f:\\projects\\book-apartment\\web.apis\\web.application\\dtos\\filterdto\\searchfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.application\\dtos\\filterdto\\searchfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{107D34F7-E038-4D59-B040-4E19DDD769D8}|Web.Application\\Web.Application.csproj|solutionrelative:web.application\\dtos\\filterdto\\searchfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,15 +71,7 @@
       "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\enums\\propertytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|f:\\projects\\book-apartment\\web.apis\\web.domain\\entites\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\entites\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\entites\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|f:\\projects\\book-apartment\\web.apis\\web.domain\\enums\\availabilitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|F:\\Projects\\Book-apartment\\Web.APIs\\web.domain\\enums\\availabilitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{359CD77A-FF03-4DC8-952C-CD839FDA0693}|Web.Domain\\Web.Domain.csproj|solutionrelative:web.domain\\enums\\availabilitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -81,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,52 +121,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewingRequest.cs",
-              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\ViewingRequest.cs",
-              "RelativeDocumentMoniker": "Web.Domain\\Entites\\ViewingRequest.cs",
-              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\ViewingRequest.cs",
-              "RelativeToolTip": "Web.Domain\\Entites\\ViewingRequest.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAHAAAA",
+              "DocumentIndex": 0,
+              "Title": "20250608140748_intial create.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Migrations\\20250608140748_intial create.cs",
+              "RelativeDocumentMoniker": "Web.Infrastructure\\Migrations\\20250608140748_intial create.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Migrations\\20250608140748_intial create.cs",
+              "RelativeToolTip": "Web.Infrastructure\\Migrations\\20250608140748_intial create.cs",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAgwN4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T16:09:29.252Z",
+              "WhenOpened": "2025-06-08T14:07:48.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250608131355_intial create.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Migrations\\20250608131355_intial create.cs",
+              "RelativeDocumentMoniker": "Web.Infrastructure\\Migrations\\20250608131355_intial create.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Migrations\\20250608131355_intial create.cs",
+              "RelativeToolTip": "Web.Infrastructure\\Migrations\\20250608131355_intial create.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:13:55.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GetReviewDto.cs",
-              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
-              "RelativeDocumentMoniker": "Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
-              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
-              "RelativeToolTip": "Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T09:19:48.545Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.APIs\\appsettings.json",
+              "RelativeDocumentMoniker": "Web.APIs\\appsettings.json",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.APIs\\appsettings.json",
+              "RelativeToolTip": "Web.APIs\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-08T13:09:05.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateReviewDto.cs",
-              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
-              "RelativeDocumentMoniker": "Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
-              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
-              "RelativeToolTip": "Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "DocumentIndex": 9,
+              "Title": "IPropertyService.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\Interfaces\\IPropertyService.cs",
+              "RelativeDocumentMoniker": "Web.Application\\Interfaces\\IPropertyService.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\Interfaces\\IPropertyService.cs",
+              "RelativeToolTip": "Web.Application\\Interfaces\\IPropertyService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T09:18:55.92Z",
+              "WhenOpened": "2025-06-08T12:41:48.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Web.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Web.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wBoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:29:36.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CreatePropertyDto.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\PropertyDTO\\CreatePropertyDto.cs",
               "RelativeDocumentMoniker": "Web.Application\\DTOs\\PropertyDTO\\CreatePropertyDto.cs",
               "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\PropertyDTO\\CreatePropertyDto.cs",
               "RelativeToolTip": "Web.Application\\DTOs\\PropertyDTO\\CreatePropertyDto.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAxwCYAAAABAAAA",
+              "ViewState": "AQIAAA8AAADA//////8TwCMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T08:59:27.781Z",
               "EditorCaption": ""
@@ -154,19 +200,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SearchFilter.cs",
-              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
-              "RelativeDocumentMoniker": "Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
-              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
-              "RelativeToolTip": "Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T08:51:26.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PropertyReview.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\PropertyReview.cs",
               "RelativeDocumentMoniker": "Web.Domain\\Entites\\PropertyReview.cs",
@@ -179,26 +212,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PropertyImage.cs",
-              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\PropertyImage.cs",
-              "RelativeDocumentMoniker": "Web.Domain\\Entites\\PropertyImage.cs",
-              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\PropertyImage.cs",
-              "RelativeToolTip": "Web.Domain\\Entites\\PropertyImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\AppUser.cs",
+              "RelativeDocumentMoniker": "Web.Domain\\Entites\\AppUser.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\AppUser.cs",
+              "RelativeToolTip": "Web.Domain\\Entites\\AppUser.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T15:10:23.496Z",
+              "WhenOpened": "2025-06-07T02:46:46.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Property.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\Property.cs",
               "RelativeDocumentMoniker": "Web.Domain\\Entites\\Property.cs",
               "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\Property.cs",
               "RelativeToolTip": "Web.Domain\\Entites\\Property.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA9wBkAAAAnAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA6wBEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T14:53:01.879Z",
               "EditorCaption": ""
@@ -211,7 +244,7 @@
               "RelativeDocumentMoniker": "Web.Domain\\Entites\\Favorite.cs",
               "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\Favorite.cs",
               "RelativeToolTip": "Web.Domain\\Entites\\Favorite.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T02:48:48.729Z",
               "EditorCaption": ""
@@ -219,19 +252,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\AppUser.cs",
-              "RelativeDocumentMoniker": "Web.Domain\\Entites\\AppUser.cs",
-              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\AppUser.cs",
-              "RelativeToolTip": "Web.Domain\\Entites\\AppUser.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAA/AAAA",
+              "Title": "PropertyImage.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\PropertyImage.cs",
+              "RelativeDocumentMoniker": "Web.Domain\\Entites\\PropertyImage.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\PropertyImage.cs",
+              "RelativeToolTip": "Web.Domain\\Entites\\PropertyImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T02:46:46.272Z",
+              "WhenOpened": "2025-06-06T15:10:23.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\Appointment.cs",
+              "RelativeDocumentMoniker": "Web.Domain\\Entites\\Appointment.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Entites\\Appointment.cs",
+              "RelativeToolTip": "Web.Domain\\Entites\\Appointment.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T16:09:29.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SearchFilter.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
+              "RelativeDocumentMoniker": "Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
+              "RelativeToolTip": "Web.Application\\DTOs\\FilterDto\\SearchFilter.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T08:51:26.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateReviewDto.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
+              "RelativeDocumentMoniker": "Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
+              "RelativeToolTip": "Web.Application\\DTOs\\ReviewDto\\CreateReviewDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T09:18:55.92Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "GetReviewDto.cs",
+              "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
+              "RelativeDocumentMoniker": "Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
+              "ToolTip": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
+              "RelativeToolTip": "Web.Application\\DTOs\\ReviewDto\\GetReviewDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T09:19:48.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AvailabilityStatus.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Enums\\AvailabilityStatus.cs",
               "RelativeDocumentMoniker": "Web.Domain\\Enums\\AvailabilityStatus.cs",
@@ -239,12 +320,11 @@
               "RelativeToolTip": "Web.Domain\\Enums\\AvailabilityStatus.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:01:46.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T03:01:46.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "PropertyNature.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Enums\\PropertyNature.cs",
               "RelativeDocumentMoniker": "Web.Domain\\Enums\\PropertyNature.cs",
@@ -252,12 +332,11 @@
               "RelativeToolTip": "Web.Domain\\Enums\\PropertyNature.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T02:40:26.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T02:40:26.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "PropertyType.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Enums\\PropertyType.cs",
               "RelativeDocumentMoniker": "Web.Domain\\Enums\\PropertyType.cs",
@@ -265,12 +344,11 @@
               "RelativeToolTip": "Web.Domain\\Enums\\PropertyType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T02:28:57.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T02:28:57.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Web.Domain",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj",
               "RelativeDocumentMoniker": "Web.Domain\\Web.Domain.csproj",
@@ -281,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Microsoft.NET.Sdk.DefaultItems.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
@@ -291,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "TokenDTO.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\AccountDTO\\TokenDTO.cs",
               "RelativeDocumentMoniker": "Web.Application\\DTOs\\AccountDTO\\TokenDTO.cs",
@@ -303,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Application\\DTOs\\AccountDTO\\LoginDTO.cs",
               "RelativeDocumentMoniker": "Web.Application\\DTOs\\AccountDTO\\LoginDTO.cs",
@@ -315,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "AccountService.cs",
               "DocumentMoniker": "F:\\Projects\\Book-apartment\\Web.APIs\\Web.Infrastructure\\Service\\AccountService.cs",
               "RelativeDocumentMoniker": "Web.Infrastructure\\Service\\AccountService.cs",
