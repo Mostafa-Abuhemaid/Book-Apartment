@@ -19,6 +19,8 @@ namespace Web.Domain.Entites
         public AppUser User { get; set; }
 
         public string Comment { get; set; }
+        
+        public int Stars { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
        

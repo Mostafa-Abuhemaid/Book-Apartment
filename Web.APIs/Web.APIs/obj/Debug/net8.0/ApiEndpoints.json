@@ -94,6 +94,38 @@
     ]
   },
   {
+    "ContainingType": "Web.APIs.Controllers.PropertyController",
+    "Method": "FlagPropertyAsFavorit",
+    "RelativePath": "api/Property/favorit-flag/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.APIs.Controllers.ReviewController",
+    "Method": "AddReview",
+    "RelativePath": "api/Review/add-review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Web.Application.Features.Reviews.Commands.AddReview.AddReviewCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Web.APIs.Controllers.UserController",
     "Method": "DeleteUserByEmail",
     "RelativePath": "api/User/DeleteAccountByEmail",

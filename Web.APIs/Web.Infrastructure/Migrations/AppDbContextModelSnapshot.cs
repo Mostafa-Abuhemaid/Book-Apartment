@@ -271,6 +271,9 @@ namespace Web.Infrastructure.Migrations
                     b.Property<int>("PropertyId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.HasKey("UserId", "PropertyId");
 
                     b.HasIndex("PropertyId");
@@ -372,6 +375,9 @@ namespace Web.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("PropertyId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Stars")
                         .HasColumnType("int");
 
                     b.Property<string>("UserId")
