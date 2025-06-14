@@ -178,6 +178,9 @@ namespace Web.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
@@ -213,9 +216,6 @@ namespace Web.Infrastructure.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
-
-                    b.Property<int>("gender")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -271,12 +271,7 @@ namespace Web.Infrastructure.Migrations
                     b.Property<int>("PropertyId")
                         .HasColumnType("int");
 
-                    b.Property<string>("AppUserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("UserId", "PropertyId");
-
-                    b.HasIndex("AppUserId");
 
                     b.HasIndex("PropertyId");
 
@@ -369,9 +364,6 @@ namespace Web.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AppUserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Comment")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -382,20 +374,13 @@ namespace Web.Infrastructure.Migrations
                     b.Property<int>("PropertyId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PropertyId1")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AppUserId");
-
                     b.HasIndex("PropertyId");
-
-                    b.HasIndex("PropertyId1");
 
                     b.HasIndex("UserId");
 
@@ -458,13 +443,13 @@ namespace Web.Infrastructure.Migrations
                     b.HasOne("Web.Domain.Entites.Property", "Property")
                         .WithMany()
                         .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Web.Domain.Entites.AppUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Property");
@@ -474,20 +459,16 @@ namespace Web.Infrastructure.Migrations
 
             modelBuilder.Entity("Web.Domain.Entites.Favorite", b =>
                 {
-                    b.HasOne("Web.Domain.Entites.AppUser", null)
-                        .WithMany("Favorites")
-                        .HasForeignKey("AppUserId");
-
                     b.HasOne("Web.Domain.Entites.Property", "Property")
                         .WithMany()
                         .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Web.Domain.Entites.AppUser", "User")
-                        .WithMany()
+                        .WithMany("Favorites")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Property");
@@ -498,7 +479,7 @@ namespace Web.Infrastructure.Migrations
             modelBuilder.Entity("Web.Domain.Entites.Property", b =>
                 {
                     b.HasOne("Web.Domain.Entites.AppUser", "Owner")
-                        .WithMany("properties")
+                        .WithMany("Properties")
                         .HasForeignKey("OwnerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -519,24 +500,16 @@ namespace Web.Infrastructure.Migrations
 
             modelBuilder.Entity("Web.Domain.Entites.PropertyReview", b =>
                 {
-                    b.HasOne("Web.Domain.Entites.AppUser", null)
-                        .WithMany("PropertyReviews")
-                        .HasForeignKey("AppUserId");
-
                     b.HasOne("Web.Domain.Entites.Property", "Property")
-                        .WithMany()
+                        .WithMany("PropertyReviews")
                         .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Web.Domain.Entites.Property", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("PropertyId1");
-
                     b.HasOne("Web.Domain.Entites.AppUser", "User")
-                        .WithMany()
+                        .WithMany("PropertyReviews")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Property");
@@ -548,16 +521,16 @@ namespace Web.Infrastructure.Migrations
                 {
                     b.Navigation("Favorites");
 
-                    b.Navigation("PropertyReviews");
+                    b.Navigation("Properties");
 
-                    b.Navigation("properties");
+                    b.Navigation("PropertyReviews");
                 });
 
             modelBuilder.Entity("Web.Domain.Entites.Property", b =>
                 {
                     b.Navigation("Images");
 
-                    b.Navigation("Reviews");
+                    b.Navigation("PropertyReviews");
                 });
 #pragma warning restore 612, 618
         }

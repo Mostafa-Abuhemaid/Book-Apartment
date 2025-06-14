@@ -35,35 +35,40 @@ namespace Web.Infrastructure.Data
             ////////////////
             builder.Entity<Favorite>()
           .HasOne(f => f.User)
-          .WithMany()
-          .HasForeignKey(f => f.UserId);
+          .WithMany(f=>f.Favorites)
+          .HasForeignKey(f => f.UserId)
+           .OnDelete(DeleteBehavior.Restrict); 
             //////////////
             builder.Entity<Favorite>()
                 .HasOne(f => f.Property)
                 .WithMany()
-                .HasForeignKey(f => f.PropertyId);
+                .HasForeignKey(f => f.PropertyId)
+                .OnDelete(DeleteBehavior.Restrict);
             ///////////////////////
             builder.Entity<PropertyReview>()
-         .HasOne(r => r.Property)
-         .WithMany()
-         .HasForeignKey(r => r.PropertyId);
-            //////////////////////////
+     .HasOne(r => r.Property)
+     .WithMany(p => p.PropertyReviews) 
+     .HasForeignKey(r => r.PropertyId)
+     .OnDelete(DeleteBehavior.Restrict);
+
             builder.Entity<PropertyReview>()
                 .HasOne(r => r.User)
-                .WithMany()
-                .HasForeignKey(r => r.UserId);
-
+                .WithMany(u => u.PropertyReviews)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
             ////////////////////
-          
+
             builder.Entity<Appointment>()
                 .HasOne(a => a.User)
                 .WithMany()
-                .HasForeignKey(a => a.UserId);
+                .HasForeignKey(a => a.UserId)
+                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Appointment>()
                 .HasOne(a => a.Property)
                 .WithMany()
-                .HasForeignKey(a => a.PropertyId);
+                .HasForeignKey(a => a.PropertyId)
+                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

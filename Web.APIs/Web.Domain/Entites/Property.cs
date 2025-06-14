@@ -27,7 +27,7 @@ public class Property:BaseClass<int>
     public AppUser Owner { get; set; }
 
     public ICollection<PropertyImage> Images { get; set; } = new List<PropertyImage>();
-    public ICollection<PropertyReview> Reviews { get; set; } = new List<PropertyReview>();
+    public ICollection<PropertyReview> PropertyReviews { get; set; } = new List<PropertyReview>();
 
 
 }
