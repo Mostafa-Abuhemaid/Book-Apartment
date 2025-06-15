@@ -518,3 +518,6 @@ F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\obj\Debug\net8.0\ref\Web.
 F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\FluentValidation.dll
 F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\Mapster.dll
+F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\Mapster.Core.dll
+F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.APIs\bin\Debug\net8.0\Mapster.DependencyInjection.dll

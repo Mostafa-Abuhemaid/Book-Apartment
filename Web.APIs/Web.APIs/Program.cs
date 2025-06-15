@@ -12,6 +12,8 @@ using Web.Domain.Repositories;
 using Web.Infrastructure.Data;
 using Web.Infrastructure.Repositories;
 using Web.Infrastructure.Service;
+using Mapster;
+using MapsterMapper;
 
 namespace Web.APIs
 {
@@ -47,6 +49,7 @@ namespace Web.APIs
 			#endregion
             builder.Services.AddHttpContextAccessor();
 			builder.Services.AddValidatorsFromAssemblyContaining(typeof(Program));
+            builder.Services.AddMapster();
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 			builder.Services.AddTransient<IEmailService, EmailService>();

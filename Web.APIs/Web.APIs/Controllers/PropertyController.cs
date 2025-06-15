@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Web.Application.Features.Properties.Commands.AddPropertyToFavorit;
+using Web.Application.Features.Properties.Queries.GetFavorit;
 
 namespace Web.APIs.Controllers
 {
@@ -24,5 +25,11 @@ namespace Web.APIs.Controllers
 			return Ok(await _mediator.Send(command));
 		}
 
+		[HttpGet("get-favorit-properties/{userId}")]
+		public async Task<IActionResult> GetFavoritProperties(string userId)
+		{
+			var query = new GetFavoritQuery(userId);
+			return Ok(await _mediator.Send(query));
+		}
 	}
 }
