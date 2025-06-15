@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Web.Domain.Entites
 {
-    public class Favorite
+    public class Favorite:BaseClass<int>
     {
         [ForeignKey(nameof(Property))]
         public int PropertyId { get; set; }
