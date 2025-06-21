@@ -64,3 +64,5 @@ F:\Projects\Book-apartment\Book-Apartment\Web.APIs\Web.Application\obj\Debug\net
 F:\Projects\Book-apartment\Book-Apartment\Web.APIs\Web.Application\obj\Debug\net8.0\ref\Web.Application.dll
 F:\Projects\Book-apartment\Book-Apartment\Web.APIs\Web.Application\bin\Debug\net8.0\Web.Infrastructure.dll
 F:\Projects\Book-apartment\Book-Apartment\Web.APIs\Web.Application\bin\Debug\net8.0\Web.Infrastructure.pdb
+F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.Application\bin\Debug\net8.0\Web.Infrastructure.dll
+F:\GitHubRepositories\Book-Apartment\Web.APIs\Web.Application\bin\Debug\net8.0\Web.Infrastructure.pdb
