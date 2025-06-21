@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PnVkPuothZwa33lh1RmHVISgAcndniXCKWEPcyC1KOs=",
+  "Hash": "q+xrATJhQyyECvnNoQFBK3O+10/oXoBge6uNViG66nk=",
   "Source": "Web.APIs",
   "BasePath": "_content/Web.APIs",
   "Mode": "Default",
@@ -10,11 +10,10 @@
     {
       "Name": "Web.APIs\\wwwroot",
       "Source": "Web.APIs",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

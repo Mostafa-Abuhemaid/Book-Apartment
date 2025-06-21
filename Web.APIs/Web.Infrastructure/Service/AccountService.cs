@@ -5,13 +5,17 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Web.Application.DTOs.AccountDTO;
 using Web.Application.Interfaces;
 using Web.Application.Response;
+using Web.Domain.DTOs.AccountDTO;
 using Web.Domain.Entites;
+using Web.Domain.Enums;
 
 namespace Web.Infrastructure.Service
 {
@@ -23,7 +27,9 @@ namespace Web.Infrastructure.Service
         private readonly IEmailService _emailService;
         private readonly IMemoryCache _memoryCache;
        
-        public AccountService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration, ITokenService tokenService, IMapper mapper, IMemoryCache memoryCache, IEmailService emailService)
+        public AccountService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
+            IConfiguration configuration, ITokenService tokenService,
+           IMemoryCache memoryCache, IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager; 
@@ -54,8 +60,7 @@ namespace Web.Infrastructure.Service
             if (!isPasswordValid)
                 return new BaseResponse<TokenDTO>(false, "Invalid phone number or password");
 
-            if (!user.PhoneNumberConfirmed)
-                return new BaseResponse<TokenDTO>(false, "Phone number not verified");
+          
 
             var roles = await _userManager.GetRolesAsync(user);
             var res = new TokenDTO
@@ -111,5 +116,49 @@ namespace Web.Infrastructure.Service
             }
 
         }
+        public async Task<BaseResponse<TokenDTO>> RegisterAsync(RegisterDto registerDto)
+        {
+            if (registerDto.Password != registerDto.ConfirmPassword)
+                return new BaseResponse<TokenDTO>(false, "Password and confirmation password do not match.");
+
+            if (!new EmailAddressAttribute().IsValid(registerDto.Email))
+                return new BaseResponse<TokenDTO>(false, "Invalid email format.");
+
+            var existingUser = await _userManager.FindByEmailAsync(registerDto.Email);
+            if (existingUser != null)
+                return new BaseResponse<TokenDTO>(false, "A user with this email already exists.");
+
+            var passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$";
+            if (!Regex.IsMatch(registerDto.Password, passwordPattern))
+            {
+                return new BaseResponse<TokenDTO>(false, "Password must contain uppercase and lowercase letters, numbers, and special characters.");
+            }
+
+            var user = new AppUser
+            {
+                UserName = registerDto.FullName,
+                Email = registerDto.Email,
+                FullName = registerDto.FullName
+            };
+
+            var result = await _userManager.CreateAsync(user, registerDto.Password);
+
+            if (!result.Succeeded)
+                return new BaseResponse<TokenDTO>(false, "Failed to create account.");
+
+            await _userManager.AddToRoleAsync(user, Roles.User.ToString());
+
+            var response = new TokenDTO
+            {
+
+                Name = registerDto.FullName,
+                Email = registerDto.Email,
+                Token = await _tokenService.GenerateTokenAsync(user, _userManager)
+            };
+
+            return new BaseResponse<TokenDTO>(true, "Account created successfully.", response);
+        }
+
+
     }
 }

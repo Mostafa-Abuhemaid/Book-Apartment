@@ -3,6 +3,7 @@ using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using Web.Application.Helpers;
 using Web.Application.Response;
 using Web.Domain.Entites;
 using Web.Domain.Repositories;
+using Web.Infrastructure.Data;
 
 namespace Web.Application.Features.Properties.Queries.GetFavorit
 {
@@ -21,15 +23,17 @@ namespace Web.Application.Features.Properties.Queries.GetFavorit
 		private readonly UserManager<AppUser> _userManager;
 		private readonly IUnitOfWork _unitOfWork;
 		private readonly IHttpContextAccessor _contextAccessor;
+		private readonly AppDbContext _dbContext;
 
-		public GetFavoritQueryHandler(UserManager<AppUser> userManager, IUnitOfWork unitOfWork, IHttpContextAccessor contextAccessor)
-		{
-			_userManager = userManager;
-			_unitOfWork = unitOfWork;
-			_contextAccessor = contextAccessor;
-		}
+        public GetFavoritQueryHandler(UserManager<AppUser> userManager, IUnitOfWork unitOfWork, IHttpContextAccessor contextAccessor, AppDbContext dbContext)
+        {
+            _userManager = userManager;
+            _unitOfWork = unitOfWork;
+            _contextAccessor = contextAccessor;
+            _dbContext = dbContext;
+        }
 
-		public async Task<BaseResponse<List<GetFavoritQueryDto>>> Handle(GetFavoritQuery request, CancellationToken cancellationToken)
+        public async Task<BaseResponse<List<GetFavoritQueryDto>>> Handle(GetFavoritQuery request, CancellationToken cancellationToken)
 		{
 			if (request.userId == null)
 			{
@@ -42,7 +46,7 @@ namespace Web.Application.Features.Properties.Queries.GetFavorit
 				return new BaseResponse<List<GetFavoritQueryDto>>(false, "User UnAuthorized!");
 			}
 
-			var favorits = await _unitOfWork.Repository<int, Favorite>().GetWithPrdicateAsync(x => x.UserId == user.Id);
+			var favorits = await _dbContext.Favorites.Where(f => f.UserId == request.userId).ToListAsync();
 			if (favorits==null || !favorits.Any())
 			{
 				return new BaseResponse<List<GetFavoritQueryDto>>(false, "You not have favorit properties!");

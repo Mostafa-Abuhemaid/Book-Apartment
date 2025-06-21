@@ -17,11 +17,11 @@ namespace Web.Infrastructure.Service
     public class UserService : IUserService
     {
         private readonly UserManager<AppUser> _userManager;
-        private readonly IMapper _mapper;
-        public UserService(UserManager<AppUser> userManager, IMapper mapper)
+       
+        public UserService(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
-            _mapper = mapper;
+           
         }
         public async Task<BaseResponse<bool>> DeleteUserByEmailAsync(string email)
         {
@@ -71,11 +71,12 @@ namespace Web.Infrastructure.Service
 
         public async Task<BaseResponse<UserDto>> GetUserDetailsAsync(string userId)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            if (user == null) return new BaseResponse<UserDto>(false, $"No User with this Id : {userId}");
-            var userDTO = _mapper.Map<UserDto>(user);
-
-            return new BaseResponse<UserDto>(true, $"Reached User with Id : {userId}", userDTO);
+            //  var user = await _userManager.FindByIdAsync(userId);
+            //  if (user == null) return new BaseResponse<UserDto>(false, $"No User with this Id : {userId}");
+            //  var userDTO = _mapper.Map<UserDto>(user);
+            //
+            //  return new BaseResponse<UserDto>(true, $"Reached User with Id : {userId}", userDTO);
+            return null;
         }
 
         public async Task<BaseResponse<bool>> LockUserByEmailAsync(string email)

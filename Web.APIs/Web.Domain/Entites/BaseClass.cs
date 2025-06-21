@@ -9,5 +9,6 @@ namespace Web.Domain.Entites
     public class BaseClass<T>
     {
         public T Id { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

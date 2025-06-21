@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Web.Application.Files
 {
-    public static class Files
+    public static class Media
     {
         public static string UploadFile(IFormFile file, string folderName)
         {
