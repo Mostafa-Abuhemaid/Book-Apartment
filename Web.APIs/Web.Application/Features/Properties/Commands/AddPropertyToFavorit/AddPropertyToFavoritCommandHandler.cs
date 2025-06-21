@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using Web.Application.Helpers;
 using Web.Application.Response;
 using Web.Domain.Entites;
 using Web.Domain.Repositories;
+using Web.Infrastructure.Data;
 
 namespace Web.Application.Features.Properties.Commands.AddPropertyToFavorit
 {
@@ -16,13 +18,15 @@ namespace Web.Application.Features.Properties.Commands.AddPropertyToFavorit
 		private readonly IUnitOfWork _unitOfWork;
 		private readonly UserManager<AppUser> _userManager;
 		private readonly IHttpContextAccessor _contextAccessor;
-		public AddPropertyToFavoritCommandHandler(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IHttpContextAccessor contextAccessor)
-		{
-			_unitOfWork = unitOfWork;
-			_userManager = userManager;
-			_contextAccessor = contextAccessor;
-		}
-		public async Task<BaseResponse<int>> Handle(AddPropertyToFavoritCommand request, CancellationToken cancellationToken)
+        private readonly AppDbContext _dbContext;
+        public AddPropertyToFavoritCommandHandler(IUnitOfWork unitOfWork, UserManager<AppUser> userManager, IHttpContextAccessor contextAccessor, AppDbContext dbContext)
+        {
+            _unitOfWork = unitOfWork;
+            _userManager = userManager;
+            _contextAccessor = contextAccessor;
+            _dbContext = dbContext;
+        }
+        public async Task<BaseResponse<int>> Handle(AddPropertyToFavoritCommand request, CancellationToken cancellationToken)
 		{
 			if (request.PropertyId == null)
 			{
@@ -41,16 +45,16 @@ namespace Web.Application.Features.Properties.Commands.AddPropertyToFavorit
 				return new BaseResponse<int>(false, "Property not found!");
 			}
 
-			var isFavorit = await _unitOfWork.Repository<int, Favorite>().GetEntityWithPrdicateAsync(x => (x.PropertyId == property.Id && x.UserId == user.Id));
-			if (isFavorit != null)
+			var isFavorit =   await _dbContext.Favorites.FirstOrDefaultAsync(f => f.UserId == user.Id && f.PropertyId== request.PropertyId);
+            if (isFavorit != null)
 			{
-				_unitOfWork.Repository<int, Favorite>().Remove(isFavorit);
+				_dbContext.Remove(isFavorit);	
 				await _unitOfWork.SaveChangesAsync();
 				return new BaseResponse<int>(true, $"Property: {property.Id} flagged as unfavorit!");
 			}
-			
-			await _unitOfWork.Repository<int,Favorite>().AddAsync(isFavorit);
-			await _unitOfWork.SaveChangesAsync();
+            var Favorit = new Favorite { PropertyId = request.PropertyId, UserId = user.Id };
+            await _dbContext.AddAsync(Favorit);
+            await _unitOfWork.SaveChangesAsync();
 
 			return new BaseResponse<int>(true, $"Property: {property.Id} flagged as favorit!");
 
