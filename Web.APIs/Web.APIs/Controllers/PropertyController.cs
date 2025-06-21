@@ -10,7 +10,6 @@ namespace Web.APIs.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	[Authorize]
 	public class PropertyController : ControllerBase
 	{
 		private readonly IMediator _mediator;

@@ -5,6 +5,54 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Account/Register": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenDTOBaseResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenDTOBaseResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenDTOBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Account/Login": {
       "post": {
         "tags": [
@@ -180,6 +228,137 @@
         }
       }
     },
+    "/api/Property/create-property": {
+      "post": {
+        "tags": [
+          "Property"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "$ref": "#/components/schemas/PropertyNature"
+                  },
+                  "Rooms": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Bathrooms": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Area": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Price": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Floor": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "PropertyType": {
+                    "$ref": "#/components/schemas/PropertyType"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "RentType": {
+                    "$ref": "#/components/schemas/RentType"
+                  },
+                  "AvailabilityStatus": {
+                    "$ref": "#/components/schemas/AvailabilityStatus"
+                  },
+                  "HasWifi": {
+                    "type": "boolean"
+                  },
+                  "MainImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "OwnerId": {
+                    "type": "string"
+                  },
+                  "Images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Title": {
+                  "style": "form"
+                },
+                "Description": {
+                  "style": "form"
+                },
+                "Type": {
+                  "style": "form"
+                },
+                "Rooms": {
+                  "style": "form"
+                },
+                "Bathrooms": {
+                  "style": "form"
+                },
+                "Area": {
+                  "style": "form"
+                },
+                "Price": {
+                  "style": "form"
+                },
+                "Floor": {
+                  "style": "form"
+                },
+                "PropertyType": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "RentType": {
+                  "style": "form"
+                },
+                "AvailabilityStatus": {
+                  "style": "form"
+                },
+                "HasWifi": {
+                  "style": "form"
+                },
+                "MainImage": {
+                  "style": "form"
+                },
+                "OwnerId": {
+                  "style": "form"
+                },
+                "Images": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Property/favorit-flag/{id}": {
       "post": {
         "tags": [
@@ -225,7 +404,7 @@
         }
       }
     },
-    "/api/Review/add-review": {
+    "/api/Review": {
       "post": {
         "tags": [
           "Review"
@@ -256,7 +435,7 @@
         }
       }
     },
-    "/api/Review/get-property-reviews/{id}": {
+    "/api/Review/{id}": {
       "get": {
         "tags": [
           "Review"
@@ -277,9 +456,7 @@
             "description": "Success"
           }
         }
-      }
-    },
-    "/api/Review/{id}": {
+      },
       "delete": {
         "tags": [
           "Review"
@@ -434,6 +611,14 @@
         },
         "additionalProperties": false
       },
+      "AvailabilityStatus": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "BooleanBaseResponse": {
         "type": "object",
         "properties": {
@@ -473,6 +658,54 @@
           }
         },
         "additionalProperties": false
+      },
+      "PropertyNature": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "PropertyType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "RegisterDto": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "confirmPassword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RentType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "ResetPasswordDto": {
         "type": "object",
