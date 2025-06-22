@@ -74,7 +74,7 @@ namespace Web.Infrastructure.Service
                 OwnerId = a.Property.OwnerId
             }).ToList();
 
-            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب المواعيد بنجاح",result);
+            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",result);
         }
     }
 }

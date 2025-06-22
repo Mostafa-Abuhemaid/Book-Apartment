@@ -9,6 +9,6 @@ namespace Web.Domain.DTOs.AppointmentDto
     public class CreateAppointmentDto
     {
         public int PropertyId { get; set; }
-        public string UserId { get; set; }
+        public string RequesterId { get; set; }
     }
 }

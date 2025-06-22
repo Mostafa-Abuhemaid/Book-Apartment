@@ -136,6 +136,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Web.APIs.Controllers.AppointmentController",
+    "Method": "GetAllAppointments",
+    "RelativePath": "api/Appointment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Web.APIs.Controllers.PropertyController",
     "Method": "CreateProperty",
     "RelativePath": "api/Property/create-property",
