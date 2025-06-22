@@ -4789,6 +4789,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.14",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "Web.Application >= 1.0.0",
+      "Web.Domain >= 1.0.0",
       "Web.Infrastructure >= 1.0.0"
     ]
   },
@@ -4826,6 +4827,9 @@
           "projectReferences": {
             "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.Application\\Web.Application.csproj": {
               "projectPath": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.Application\\Web.Application.csproj"
+            },
+            "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj": {
+              "projectPath": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj"
             },
             "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj": {
               "projectPath": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj"

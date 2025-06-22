@@ -45,6 +45,7 @@ namespace Web.Application.Features.Reviews.Queries.GetReviews
 				var review=i.Adapt<GetPropertyReviewsQueryDto>();
 				var user = await _userManager.FindByIdAsync(i.UserId);
 				review.reviewer = user.Adapt<ReviewerDto>();
+				response.Add(review);
 			}
 
 			return new BaseResponse<List<GetPropertyReviewsQueryDto>>(true, "Reviews with reviewers", response);

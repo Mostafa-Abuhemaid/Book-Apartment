@@ -120,6 +120,22 @@
     ]
   },
   {
+    "ContainingType": "Web.APIs.Controllers.AppointmentController",
+    "Method": "AddNewAppointmentAsync",
+    "RelativePath": "api/Appointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Web.Domain.DTOs.AppointmentDto.CreateAppointmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Web.APIs.Controllers.PropertyController",
     "Method": "CreateProperty",
     "RelativePath": "api/Property/create-property",
@@ -319,15 +335,15 @@
   {
     "ContainingType": "Web.APIs.Controllers.UserController",
     "Method": "DeleteUserByEmail",
-    "RelativePath": "api/User/DeleteAccountByEmail",
+    "RelativePath": "api/User/{UserId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
+        "Name": "UserId",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -339,20 +355,15 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Web.APIs.Controllers.UserController",
-    "Method": "LockUser",
-    "RelativePath": "api/User/Lock",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -360,16 +371,32 @@
   },
   {
     "ContainingType": "Web.APIs.Controllers.UserController",
-    "Method": "UnlockUser",
-    "RelativePath": "api/User/Unlock",
+    "Method": "LockUser",
+    "RelativePath": "api/User/Lock/{UserId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
+        "Name": "UserId",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.APIs.Controllers.UserController",
+    "Method": "UnlockUser",
+    "RelativePath": "api/User/Unlock/{UserId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

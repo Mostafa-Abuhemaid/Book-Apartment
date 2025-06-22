@@ -228,6 +228,37 @@
         }
       }
     },
+    "/api/Appointment": {
+      "post": {
+        "tags": [
+          "Appointment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAppointmentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAppointmentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAppointmentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Property/create-property": {
       "post": {
         "tags": [
@@ -515,15 +546,16 @@
         }
       }
     },
-    "/api/User/Lock": {
+    "/api/User/Lock/{UserId}": {
       "post": {
         "tags": [
           "User"
         ],
         "parameters": [
           {
-            "name": "email",
-            "in": "query",
+            "name": "UserId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -536,15 +568,16 @@
         }
       }
     },
-    "/api/User/Unlock": {
+    "/api/User/Unlock/{UserId}": {
       "post": {
         "tags": [
           "User"
         ],
         "parameters": [
           {
-            "name": "email",
-            "in": "query",
+            "name": "UserId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -557,15 +590,16 @@
         }
       }
     },
-    "/api/User/DeleteAccountByEmail": {
+    "/api/User/{UserId}": {
       "delete": {
         "tags": [
           "User"
         ],
         "parameters": [
           {
-            "name": "email",
-            "in": "query",
+            "name": "UserId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -582,6 +616,24 @@
       "get": {
         "tags": [
           "User"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -635,6 +687,20 @@
         },
         "additionalProperties": false
       },
+      "CreateAppointmentDto": {
+        "type": "object",
+        "properties": {
+          "propertyId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ForgetPasswordDto": {
         "type": "object",
         "properties": {
@@ -681,6 +747,10 @@
         "type": "object",
         "properties": {
           "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
             "type": "string",
             "nullable": true
           },

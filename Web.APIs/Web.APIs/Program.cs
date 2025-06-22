@@ -14,6 +14,10 @@ using Web.Infrastructure.Repositories;
 using Web.Infrastructure.Service;
 using Mapster;
 using MapsterMapper;
+using Web.Domain.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Web.APIs
 {
@@ -39,12 +43,42 @@ namespace Web.APIs
              .AddDefaultTokenProviders();
 
             builder.Services.Configure<EmailDto>(configuration.GetSection("MailSettings"));
-			
-			#region Mediator Service
-			builder.Services.AddMediatR(cfg =>
+
+            #region Jwt Service
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(o =>
+            {
+                o.RequireHttpsMetadata = false;
+                o.SaveToken = false;
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"])),
+
+                    ValidateIssuer = true,
+                    ValidIssuer = configuration["JWT:Issuer"],
+
+                    ValidateAudience = true,
+                    ValidAudience = configuration["JWT:Audience"],
+
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+            #endregion
+
+            #region Mediator Service
+            builder.Services.AddMediatR(cfg =>
 			{
 				cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+
                 cfg.RegisterServicesFromAssembly(typeof(Application.AssemblyReference).Assembly); 
+
 			});
 			#endregion
             builder.Services.AddHttpContextAccessor();
@@ -56,7 +90,7 @@ namespace Web.APIs
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IUserService, UserService>();
-         
+            builder.Services.AddScoped<IAppointmentService, AppointmentService>();  
             builder.Services.AddMemoryCache();
             var app = builder.Build();
 

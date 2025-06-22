@@ -136,9 +136,12 @@ namespace Web.Infrastructure.Service
 
             var user = new AppUser
             {
+
                 UserName = registerDto.FullName,
                 Email = registerDto.Email,
-                FullName = registerDto.FullName
+                FullName = registerDto.FullName,
+                PhoneNumber= registerDto.PhoneNumber
+                
             };
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);
@@ -150,7 +153,7 @@ namespace Web.Infrastructure.Service
 
             var response = new TokenDTO
             {
-
+                UserId= user.Id,
                 Name = registerDto.FullName,
                 Email = registerDto.Email,
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
