@@ -139,7 +139,9 @@ namespace Web.Infrastructure.Service
 
                 UserName = registerDto.FullName,
                 Email = registerDto.Email,
-                FullName = registerDto.FullName
+                FullName = registerDto.FullName,
+                PhoneNumber= registerDto.PhoneNumber
+                
             };
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);

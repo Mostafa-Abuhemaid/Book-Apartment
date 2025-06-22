@@ -9,8 +9,10 @@ using Web.Application.Features.Properties.Queries.GetFavorit;
 namespace Web.APIs.Controllers
 {
 	[ApiController]
+
 	[Route("api/[controller]")]
 	
+
 	public class PropertyController : ControllerBase
 	{
 		private readonly IMediator _mediator;
@@ -19,6 +21,7 @@ namespace Web.APIs.Controllers
 		{
 			_mediator = mediator;
 		}
+		
         [HttpPost("create-property")]
         [DisableRequestSizeLimit] // لو الصور حجمها كبير
         public async Task<IActionResult> CreateProperty([FromForm] CreatePropertyCommand command)

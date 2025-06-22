@@ -45,12 +45,14 @@ namespace Web.APIs
 			builder.Services.AddMediatR(cfg =>
 			{
 				cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-				
+
+                cfg.RegisterServicesFromAssembly(typeof(Application.AssemblyReference).Assembly); 
+
 			});
 			#endregion
             builder.Services.AddHttpContextAccessor();
-			builder.Services.AddValidatorsFromAssemblyContaining(typeof(Program));
-            builder.Services.AddMapster();
+			builder.Services.AddValidatorsFromAssembly(typeof(Application.AssemblyReference).Assembly); 
+			builder.Services.AddMapster();
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 			builder.Services.AddTransient<IEmailService, EmailService>();
@@ -69,8 +71,9 @@ namespace Web.APIs
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
 
+            app.UseAuthorization();
 
             app.MapControllers();
 

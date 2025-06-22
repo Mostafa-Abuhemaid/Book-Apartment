@@ -33,6 +33,8 @@ namespace Web.Application.Features.Properties.Commands.AddNewProperty
             if (request.MainImage != null)
                 property.MainImage = Media.UploadFile(request.MainImage, "Property");
 
+            await _unitOfWork.Repository<int, Property>().AddAsync(property);
+            await _unitOfWork.SaveChangesAsync();
             foreach (var image in request.Images)
             {
                 var imageUrl = Media.UploadFile(image, "Property");
@@ -46,7 +48,7 @@ namespace Web.Application.Features.Properties.Commands.AddNewProperty
 
             await _unitOfWork.SaveChangesAsync();
 
-            return new BaseResponse<string>(true, "Property created successfully!", property.Id.ToString());
+            return new BaseResponse<string>(true, "Property created successfully!");
         }
     }
 }
