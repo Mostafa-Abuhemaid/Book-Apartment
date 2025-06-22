@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Web.Domain.Enums
 {
-    public  enum PropertyNature
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public enum PropertyNature
     {
-        Apartment,      // شقة
-        Villa,          // فيلا
-        House,          // بيت
-        Chalet,         // شاليه
+        بيت,
+        سطح,
+        شاليه,
+        فيلا,
+        شقة,
+        غرفة
     }
 }

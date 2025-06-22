@@ -1,30 +1,32 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Web.Application.DTOs.PropertyDTO;
 using Web.Application.Response;
 using Web.Domain.Enums;
 
 namespace Web.Application.Features.Properties.Commands.AddNewProperty
 {
-    public record CreatePropertyCommand(string Title,
+    public record CreatePropertyCommand(
+        string? Title,
         string? Description,
         PropertyNature Type,
-        int? Rooms,
-        int? Bathrooms,
+        string? Rooms,
+        string? Bathrooms,
         double? Area,
-        int Price,
-        int? Floor,
+        int? Price,
+        string? Floor,
         PropertyType PropertyType,
-        string? Address,
+        string? Governorate,
+        string? City,
         RentType? RentType,
+        double? RentAdvance,
+        double? RentPrice,
+        string? PriceRentType,
         AvailabilityStatus? AvailabilityStatus,
         bool? HasWifi,
+        bool IsActive,
         IFormFile? MainImage,
         string OwnerId,
-        ICollection<IFormFile> Images) : IRequest<BaseResponse<string>>;
+        ICollection<IFormFile>? Images
+    ) : IRequest<BaseResponse<string>>;
 }

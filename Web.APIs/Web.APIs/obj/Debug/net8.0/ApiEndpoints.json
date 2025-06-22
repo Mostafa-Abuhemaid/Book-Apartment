@@ -148,7 +148,7 @@
   {
     "ContainingType": "Web.APIs.Controllers.PropertyController",
     "Method": "CreateProperty",
-    "RelativePath": "api/Property/create-property",
+    "RelativePath": "api/Property",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -239,7 +239,7 @@
   {
     "ContainingType": "Web.APIs.Controllers.PropertyController",
     "Method": "FlagPropertyAsFavorit",
-    "RelativePath": "api/Property/favorit-flag/{id}",
+    "RelativePath": "api/Property/AddOrDeleteFavorit/{id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -255,17 +255,11 @@
   {
     "ContainingType": "Web.APIs.Controllers.PropertyController",
     "Method": "GetFavoritProperties",
-    "RelativePath": "api/Property/get-favorit-properties/{userId}",
+    "RelativePath": "api/Property/GetFavoritProperties",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

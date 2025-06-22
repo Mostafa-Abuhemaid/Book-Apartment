@@ -35,21 +35,19 @@ namespace Web.Application.Features.Properties.Queries.GetFavorit
 
         public async Task<BaseResponse<List<GetFavoritQueryDto>>> Handle(GetFavoritQuery request, CancellationToken cancellationToken)
 		{
-			if (request.userId == null)
+         var user = await GetUser.GetCurrentUserAsync(_contextAccessor, _userManager);
+			if (user == null)
 			{
 				return new BaseResponse<List<GetFavoritQueryDto>>(false, "Invalid Id");
 			}
 
-			var user = await GetUser.GetCurrentUserAsync(_contextAccessor, _userManager);
-			if (user == null || request.userId != user.Id)
-			{
-				return new BaseResponse<List<GetFavoritQueryDto>>(false, "User UnAuthorized!");
-			}
+			
+			
 
-			var favorits = await _dbContext.Favorites.Where(f => f.UserId == request.userId).ToListAsync();
+			var favorits = await _dbContext.Favorites.Where(f => f.UserId == user.Id).ToListAsync();
 			if (favorits==null || !favorits.Any())
 			{
-				return new BaseResponse<List<GetFavoritQueryDto>>(false, "You not have favorit properties!");
+				return new BaseResponse<List<GetFavoritQueryDto>>(false, "ليس لديك اي عقارات مفضلة");
 			}
 
 			var response = new List<GetFavoritQueryDto>();
@@ -62,7 +60,7 @@ namespace Web.Application.Features.Properties.Queries.GetFavorit
 				}
 			}
 
-			return new BaseResponse<List<GetFavoritQueryDto>>(true, "Your favorit properties retrived successfully!", response);
+			return new BaseResponse<List<GetFavoritQueryDto>>(true, "تم الوصول الي عقارتك المفضلة بنجاح", response);
 		}
 	}
 }

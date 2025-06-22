@@ -31,10 +31,10 @@ namespace Web.Infrastructure.Service
            var property = await _dbContext.Properties.FirstOrDefaultAsync(p => p.Id == dto.PropertyId);   
             if(property == null)           
                 return new BaseResponse<bool>(false, "هذا العقار غير موجود ");
-            var user = await _userManager.FindByIdAsync(dto.UserId);
+            var user = await _userManager.FindByIdAsync(dto.RequesterId);
             if (user == null)
                 return new BaseResponse<bool>(false, $"هذا المستخدم غير موجود");
-            var existing = await _dbContext.Appointments.FirstOrDefaultAsync(a => a.PropertyId == dto.PropertyId && a.UserId == dto.UserId);
+            var existing = await _dbContext.Appointments.FirstOrDefaultAsync(a => a.PropertyId == dto.PropertyId && a.UserId == dto.RequesterId);
             if (existing != null)
                 return new BaseResponse<bool>(false, "لقد قمت بطلب معاينة لهذا العقار من قبل.");
 
@@ -70,8 +70,8 @@ namespace Web.Infrastructure.Service
                 OwnerPhone = a.Property.Owner.PhoneNumber,
                 MainImage = a.Property.MainImage != null ? $"{_configuration["BaseURL"]}/User/{a.Property.MainImage}" : null,
                 PropertyType = a.Property.PropertyType,
-                Address = a.Property.Address,
-                Id = a.Property.OwnerId
+                
+                RequesterId = a.Property.OwnerId
             }).ToList();
 
             return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",result);
