@@ -11,7 +11,7 @@ namespace Web.APIs.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	[Authorize]
+
 	public class ReviewController : ControllerBase
 	{
 		private readonly IMediator _mediator;

@@ -13,33 +13,33 @@ namespace Web.APIs.Controllers
         {
             _userService = userService;
         }
-        [HttpPost("Lock")]
-        public async Task<IActionResult> LockUser(string email)
+        [HttpPost("Lock/{UserId}")]
+        public async Task<IActionResult> LockUser(string UserId)
         {
-            var user = await _userService.LockUserByEmailAsync(email);
+            var user = await _userService.LockUserByEmailAsync(UserId);
             return user.Success ? Ok(user) : BadRequest(user);
         }
 
 
         //  [Authorize(Roles = "Admin")]
-        [HttpPost("Unlock")]
-        public async Task<IActionResult> UnlockUser(string email)
+        [HttpPost("Unlock/{UserId}")]
+        public async Task<IActionResult> UnlockUser(string UserId)
         {
-            var user = await _userService.UnlockUserByEmailAsync(email);
+            var user = await _userService.UnlockUserByEmailAsync(UserId);
             return user.Success ? Ok(user) : BadRequest(user);
         }
         // [Authorize(Roles = "Admin")] 
-        [HttpDelete("DeleteAccountByEmail")]
-        public async Task<IActionResult> DeleteUserByEmail(string email)
+        [HttpDelete("{UserId}")]
+        public async Task<IActionResult> DeleteUserByEmail(string UserId)
         {
-            var user = await _userService.DeleteUserByEmailAsync(email);
+            var user = await _userService.DeleteUserByIdAsync(UserId);
             return user.Success ? Ok(user) : BadRequest(user);
         }
         // [Authorize(Roles = "Admin")] 
         [HttpGet("GetAllUsers")]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IActionResult> GetAllUsers(int pageNumber, int pageSize)
         {
-            var user = await _userService.GetAllUsersAsync();
+            var user = await _userService.GetAllUsersAsync( pageNumber,  pageSize);
             return user.Success ? Ok(user) : BadRequest(user);
         }
     }

@@ -14,6 +14,7 @@ using Web.Infrastructure.Repositories;
 using Web.Infrastructure.Service;
 using Mapster;
 using MapsterMapper;
+using Web.Domain.Interfaces;
 
 namespace Web.APIs
 {
@@ -44,7 +45,7 @@ namespace Web.APIs
 			builder.Services.AddMediatR(cfg =>
 			{
 				cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-				cfg.NotificationPublisher = new TaskWhenAllPublisher();
+				
 			});
 			#endregion
             builder.Services.AddHttpContextAccessor();
@@ -56,7 +57,7 @@ namespace Web.APIs
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IUserService, UserService>();
-         
+            builder.Services.AddScoped<IAppointmentService, AppointmentService>();  
             builder.Services.AddMemoryCache();
             var app = builder.Build();
 

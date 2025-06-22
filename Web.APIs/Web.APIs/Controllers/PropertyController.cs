@@ -8,9 +8,9 @@ using Web.Application.Features.Properties.Queries.GetFavorit;
 
 namespace Web.APIs.Controllers
 {
-	[Route("api/[controller]")]
 	[ApiController]
-	[Authorize]
+	[Route("api/[controller]")]
+	
 	public class PropertyController : ControllerBase
 	{
 		private readonly IMediator _mediator;
