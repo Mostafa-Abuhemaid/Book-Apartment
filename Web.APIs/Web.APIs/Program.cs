@@ -71,6 +71,7 @@ namespace Web.APIs
                 };
             });
             #endregion
+
             #region Mediator Service
             builder.Services.AddMediatR(cfg =>
 			{

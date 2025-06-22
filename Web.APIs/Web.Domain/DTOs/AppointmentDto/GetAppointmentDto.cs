@@ -17,6 +17,6 @@ namespace Web.Domain.DTOs.AppointmentDto
         public string? MainImage { get; set; }      
         public PropertyType PropertyType { get; set; } //بيع او ايجار
         public string? Address { get; set; }
-        public string OwnerId { get; set; }
+        public string RequesterId { get; set; }
     }
 }

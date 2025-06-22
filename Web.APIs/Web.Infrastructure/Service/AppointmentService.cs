@@ -71,7 +71,7 @@ namespace Web.Infrastructure.Service
                 MainImage = a.Property.MainImage != null ? $"{_configuration["BaseURL"]}/User/{a.Property.MainImage}" : null,
                 PropertyType = a.Property.PropertyType,
                 Address = a.Property.Address,
-                OwnerId = a.Property.OwnerId
+                Id = a.Property.OwnerId
             }).ToList();
 
             return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",result);
