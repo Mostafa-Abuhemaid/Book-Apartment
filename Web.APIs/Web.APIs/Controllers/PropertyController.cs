@@ -25,6 +25,8 @@ namespace Web.APIs.Controllers
             return Ok(await _mediator.Send(command));
         }
         [HttpPost("favorit-flag/{id}")]
+
+		[Authorize/*(AuthenticationSchemes ="Bearer")*/]
 		public async Task<IActionResult> FlagPropertyAsFavorit(int id)
 		{
 			var command = new AddPropertyToFavoritCommand(id);
