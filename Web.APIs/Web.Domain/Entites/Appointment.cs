@@ -16,7 +16,7 @@ namespace Web.Domain.Entites
         public AppUser User { get; set; } 
 
         public DateTime RequestedAt { get; set; } = DateTime.UtcNow;
-        public string ConfirmedBy { get; set; }
+        public string? ConfirmedBy { get; set; }
         public bool IsConfirmed { get; set; } = false;
     }
 }

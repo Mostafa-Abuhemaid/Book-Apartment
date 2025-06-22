@@ -11,11 +11,11 @@ namespace Web.Application.Interfaces
     public interface IUserService
     {
         Task<BaseResponse<UserDto>> GetUserDetailsAsync(string userId);
-        Task<BaseResponse<List<UserDto>>> GetAllUsersAsync();
+        Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber , int pageSize );
         Task<BaseResponse<bool>> EditUserAsync( UserDto model);
 
-        Task<BaseResponse<bool>> LockUserByEmailAsync(string email);
-        Task<BaseResponse<bool>> UnlockUserByEmailAsync(string email);
-        Task<BaseResponse<bool>> DeleteUserByEmailAsync(string email);
+        Task<BaseResponse<bool>> LockUserByEmailAsync(string UserId);
+        Task<BaseResponse<bool>> UnlockUserByEmailAsync(string UserId);
+        Task<BaseResponse<bool>> DeleteUserByIdAsync(string userId);
     }
 }

@@ -23,14 +23,19 @@ namespace Web.Infrastructure.Service
             _userManager = userManager;
            
         }
-        public async Task<BaseResponse<bool>> DeleteUserByEmailAsync(string email)
+        public async Task<BaseResponse<bool>> DeleteUserByIdAsync(string userId)
         {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) return new BaseResponse<bool>(false, $"No User with this email : {email}");
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+                return new BaseResponse<bool>(false, $"No user found with ID: {userId}");
 
             var result = await _userManager.DeleteAsync(user);
-            return new BaseResponse<bool>(true, $"User {email} deleted successfully");
+            if (!result.Succeeded)
+                return new BaseResponse<bool>(false, "Failed to delete user");
+
+            return new BaseResponse<bool>(true, $"User with Name {user.FullName} deleted successfully");
         }
+
 
         public async Task<BaseResponse<bool>> EditUserAsync([FromBody] UserDto model)
         {
@@ -46,9 +51,17 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<bool>(true, $"User {model.UserName} Updated successfully");
         }
 
-        public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync()
+        public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber = 10, int pageSize = 10)
         {
-            var users = await _userManager.Users.ToListAsync();
+           
+            int skip = (pageNumber - 1) * pageSize;
+
+           
+            var users = await _userManager.Users
+                .Skip(skip)
+                .Take(pageSize)
+                .ToListAsync();
+
             var userDtos = new List<UserDto>();
 
             foreach (var user in users)
@@ -69,6 +82,7 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<List<UserDto>>(true, "Reached Users successfully", userDtos);
         }
 
+
         public async Task<BaseResponse<UserDto>> GetUserDetailsAsync(string userId)
         {
             //  var user = await _userManager.FindByIdAsync(userId);
@@ -79,20 +93,20 @@ namespace Web.Infrastructure.Service
             return null;
         }
 
-        public async Task<BaseResponse<bool>> LockUserByEmailAsync(string email)
+        public async Task<BaseResponse<bool>> LockUserByEmailAsync(string UserId)
         {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) new BaseResponse<bool>(false, $"No User with this email : {email}");
+            var user = await _userManager.FindByIdAsync(UserId);
+            if (user == null) new BaseResponse<bool>(false, $"No User with this Id ");
 
             await _userManager.SetLockoutEnabledAsync(user, true);
             await _userManager.SetLockoutEndDateAsync(user, DateTimeOffset.MaxValue);
             return new BaseResponse<bool>(true, $"User {user.UserName} locked successfully");
         }
 
-        public async Task<BaseResponse<bool>> UnlockUserByEmailAsync(string email)
+        public async Task<BaseResponse<bool>> UnlockUserByEmailAsync(string UserId)
         {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) return new BaseResponse<bool>(false, $"No User with this email : {email}");
+            var user = await _userManager.FindByIdAsync(UserId);
+            if (user == null) return new BaseResponse<bool>(false, $"No User with this Id");
 
             await _userManager.SetLockoutEndDateAsync(user, DateTimeOffset.UtcNow);
             return new BaseResponse<bool>(true, $"User {user.UserName} unlocked successfully");
