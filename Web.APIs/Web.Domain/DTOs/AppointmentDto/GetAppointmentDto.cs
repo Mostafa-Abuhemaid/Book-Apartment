@@ -9,12 +9,14 @@ namespace Web.Domain.DTOs.AppointmentDto
 {
     public class GetAppointmentDto
     {
+        public int Id { get; set; }
         public int PropertyId { get; set; }
-        public string Owner { get; set; }
+        public string Tilte {  get; set; }
+        public string OwnerName { get; set; }
         public string OwnerPhone { get; set; }
         public string? MainImage { get; set; }      
         public PropertyType PropertyType { get; set; } //بيع او ايجار
         public string? Address { get; set; }
-        public string UserId { get; set; }
+        public string OwnerId { get; set; }
     }
 }

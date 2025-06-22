@@ -23,5 +23,6 @@ namespace Web.APIs.Controllers
             return result.Success ? Ok(result) : BadRequest(result);
 
         }
+
     }
 }
