@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LLnu0yvdMXFlIOd+ta37cbWY+9mDHGMBb8ktxirC16s=",
+  "Hash": "ifBaSK6v3Ity9bSArcYBOK+BJooDHeydA8pSa2O5/hw=",
   "Source": "Web.APIs",
   "BasePath": "_content/Web.APIs",
   "Mode": "Default",
@@ -10,3824 +10,714 @@
     {
       "Name": "Web.APIs\\wwwroot",
       "Source": "Web.APIs",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nvyhd8nucj",
-      "Integrity": "0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jrpf949ycm",
-      "Integrity": "L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7yepgeg4jp",
-      "Integrity": "7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nvyhd8nucj",
-      "Integrity": "0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7yepgeg4jp",
-      "Integrity": "7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nvyhd8nucj",
-      "Integrity": "0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7yepgeg4jp",
-      "Integrity": "7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nvyhd8nucj",
-      "Integrity": "0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vy996v9pvr",
-      "Integrity": "SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ldew8pigt",
-      "Integrity": "vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7yepgeg4jp",
-      "Integrity": "7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ldew8pigt",
-      "Integrity": "vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "66r9lyvxjx",
-      "Integrity": "zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vy996v9pvr",
-      "Integrity": "SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vy996v9pvr",
-      "Integrity": "SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7yepgeg4jp",
-      "Integrity": "7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jrpf949ycm",
-      "Integrity": "L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jrpf949ycm",
-      "Integrity": "L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jrpf949ycm",
-      "Integrity": "L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "66r9lyvxjx",
-      "Integrity": "zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jrpf949ycm",
-      "Integrity": "L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nvyhd8nucj",
-      "Integrity": "0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vy996v9pvr",
-      "Integrity": "SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z268qyyhmv",
-      "Integrity": "Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "66r9lyvxjx",
-      "Integrity": "zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "66r9lyvxjx",
-      "Integrity": "zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ldew8pigt",
-      "Integrity": "vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "66r9lyvxjx",
-      "Integrity": "zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ldew8pigt",
-      "Integrity": "vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ldew8pigt",
-      "Integrity": "vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg"
     },
     {
-      "Identity": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg",
+      "Identity": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg",
       "SourceId": "Web.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
+      "ContentRoot": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\",
       "BasePath": "_content/Web.APIs",
-      "RelativePath": "Property/e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "Property/e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vy996v9pvr",
-      "Integrity": "SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Property\\e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "Property/008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.nvyhd8nucj.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nvyhd8nucj"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/008fc29a-9d50-4edf-ad40-cede02595c01494537952_3634147230226089_7205264837492840807_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jrpf949ycm.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jrpf949ycm"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/0232d616-6515-49a5-8388-92e6d2fd5cb0493016850_3634147610226051_5699856890177836910_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.7yepgeg4jp.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7yepgeg4jp"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\028aa864-4ed8-45f3-819d-470613aead40502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.nvyhd8nucj.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nvyhd8nucj"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/03ccf65a-034a-4311-8bc3-b45703a1580f494537952_3634147230226089_7205264837492840807_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.7yepgeg4jp.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7yepgeg4jp"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2180cdfc-cf8e-4872-93d5-22c18be0ceea502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.nvyhd8nucj.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nvyhd8nucj"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/256af283-559d-4c3a-885f-9b1c71e05f3f494537952_3634147230226089_7205264837492840807_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/2603154d-f693-4af0-a0dc-7f27d480801a505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.7yepgeg4jp.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7yepgeg4jp"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\266c1ee8-e920-4a86-93e8-7d0996a7c982502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.nvyhd8nucj.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nvyhd8nucj"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/28b8b065-b3db-4a1c-bbe1-efd14b6e4564494537952_3634147230226089_7205264837492840807_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.vy996v9pvr.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vy996v9pvr"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/2974ebb1-56fa-4a2d-a7be-766143bb996d502640932_3634147303559415_7123551000997504218_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.0ldew8pigt.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ldew8pigt"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\2aa55ea4-a323-4568-8c73-c0846da91d71492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.7yepgeg4jp.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7yepgeg4jp"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\328c5605-d3fa-479a-a687-b5afe70482f6502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.0ldew8pigt.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ldew8pigt"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\334eea24-a9dc-4a00-a935-fc2aef6396ac492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.66r9lyvxjx.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "66r9lyvxjx"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\3daf5ae0-a687-48c2-97d9-0cf7ec73cf76493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.vy996v9pvr.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vy996v9pvr"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/486c400c-5c0b-46a4-a452-f067d2a4f003502640932_3634147303559415_7123551000997504218_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.vy996v9pvr.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vy996v9pvr"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/48f03b90-9532-4252-ab1a-1574c1fc9976502640932_3634147303559415_7123551000997504218_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.7yepgeg4jp.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7yepgeg4jp"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\575072bd-a597-4b70-ac83-7c715dc3fbb5502582271_3634147353559410_3598602709826645499_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7x/CrkeWimI6dizNPQtB8PPch8nyfB0TyzLapEoiu1o="
-        }
-      ]
-    },
-    {
-      "Route": "Property/64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/64d6e9de-7f76-43ef-889c-a379a6951804505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jrpf949ycm.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jrpf949ycm"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/6f8cc7bd-adf1-454b-be86-921dc7dd4e90493016850_3634147610226051_5699856890177836910_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jrpf949ycm.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jrpf949ycm"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/75afad73-72f9-43f5-9500-e1fa005e9cc1493016850_3634147610226051_5699856890177836910_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jrpf949ycm.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jrpf949ycm"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/7e97c5d7-1822-4f0c-8c69-63b58bcda76d493016850_3634147610226051_5699856890177836910_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/8746c795-82aa-43ee-aa4e-ae66f75f3f79505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/9be51a3b-317a-49eb-922c-0caa05badde3505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.66r9lyvxjx.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "66r9lyvxjx"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\9ee82a03-5bb6-4533-ba85-093cba77845f493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jrpf949ycm.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35003"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jrpf949ycm"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/b2bb0545-cf75-4ac7-b58e-d682515c1137493016850_3634147610226051_5699856890177836910_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L3ncowiw5Jgvp1Pa2hxYUnjH3OBbXllAQide5ybpC+8="
-        }
-      ]
-    },
-    {
-      "Route": "Property/b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/b6d0e3f8-7c60-4937-b4dd-30a6a5dcea4c505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.nvyhd8nucj.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122466"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nvyhd8nucj"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/bae7001e-e22f-4ce0-a914-0b6fa17860c7494537952_3634147230226089_7205264837492840807_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0weNIA5QfxwK+6MoZhp09HhI+xK3pmIlgnbQBDtwv0k="
-        }
-      ]
-    },
-    {
-      "Route": "Property/bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.vy996v9pvr.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vy996v9pvr"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/bce0a9c6-fb55-4ee8-995c-b32497aae0a3502640932_3634147303559415_7123551000997504218_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/bef2a351-303f-4e26-9c74-76ba91434116505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.z268qyyhmv.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "126904"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z268qyyhmv"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/c0f58a15-1a28-48ec-b308-2f26c0973685505105372_3634147663559379_2411949011507112318_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Na0RsUggdE6UBOUPNfOF0Q/tiJvd2aNUuB/rIMdjfVg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.66r9lyvxjx.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "66r9lyvxjx"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\ce8bf254-e30e-4ac6-bd31-2100d28bf09b493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.66r9lyvxjx.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "66r9lyvxjx"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\cecc3a3c-d73d-420a-9724-4cf4470ccdb3493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.0ldew8pigt.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ldew8pigt"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dc10ef91-8a53-4df9-8739-1580e0280a7c492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.66r9lyvxjx.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "66r9lyvxjx"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\dfd17cbf-4abb-4ba7-9bbb-563013d9e7ef493048527_3634147733559372_5305683559517283535_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21602"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zh6bb8YoETIVIvO0k7Q7cz4TqBMDuzlHvApKM4bPWyI="
-        }
-      ]
-    },
-    {
-      "Route": "Property/e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.0ldew8pigt.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ldew8pigt"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e1b77102-98ca-4b13-af58-7ec48b99a9f0492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.0ldew8pigt.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ldew8pigt"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e2bb0c4b-7a49-4878-b1e2-38d756781717492970738_3634147786892700_6344545952288517903_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34649"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vHPvEuA85OTAUti3YRgMpqmW2LVXQcds633IQWTg/rg="
-        }
-      ]
-    },
-    {
-      "Route": "Property/e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
-    },
-    {
-      "Route": "Property/e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.vy996v9pvr.jpg",
-      "AssetFile": "F:\\GitHubRepositories\\Book-Apartment\\Web.APIs\\Web.APIs\\wwwroot\\Property\\e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "94023"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Jun 2025 13:21:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vy996v9pvr"
-        },
-        {
-          "Name": "label",
-          "Value": "Property/e57dcad7-154c-49f3-8b9d-1af4a5c6c894502640932_3634147303559415_7123551000997504218_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfOeZu2Pg0K5j+ZtREOTIzwykWjTn3jTljGc0vYsv9I="
-        }
-      ]
     }
   ]
 }

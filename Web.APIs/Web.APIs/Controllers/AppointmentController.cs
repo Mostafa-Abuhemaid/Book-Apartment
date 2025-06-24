@@ -23,6 +23,11 @@ namespace Web.APIs.Controllers
             return result.Success ? Ok(result) : BadRequest(result);
 
         }
-
+        [HttpGet()]
+        public async Task<IActionResult> GetAllAppointments()
+        {
+            var result = await _appointmentService.GetAllAppointmentAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
     }
 }

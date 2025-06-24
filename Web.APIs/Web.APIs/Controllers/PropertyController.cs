@@ -4,15 +4,18 @@ using Microsoft.AspNetCore.Mvc;
 using Web.Application.DTOs.PropertyDTO;
 using Web.Application.Features.Properties.Commands.AddNewProperty;
 using Web.Application.Features.Properties.Commands.AddPropertyToFavorit;
+using Web.Application.Features.Properties.Queries.Filter_Properties;
+using Web.Application.Features.Properties.Queries.Get_Property_By_Id;
 using Web.Application.Features.Properties.Queries.GetFavorit;
+using Web.Application.Features.Properties.Queries.Requests_To_Add_Properties;
+using Web.Application.Response;
+using Web.Domain.DTOs.PropertyDTO;
 
 namespace Web.APIs.Controllers
 {
 	[ApiController]
-
 	[Route("api/[controller]")]
 	
-
 	public class PropertyController : ControllerBase
 	{
 		private readonly IMediator _mediator;
@@ -22,26 +25,45 @@ namespace Web.APIs.Controllers
 			_mediator = mediator;
 		}
 		
-        [HttpPost("create-property")]
+        [HttpPost()]
         [DisableRequestSizeLimit] // لو الصور حجمها كبير
         public async Task<IActionResult> CreateProperty([FromForm] CreatePropertyCommand command)
         {
             return Ok(await _mediator.Send(command));
         }
-        [HttpPost("favorit-flag/{id}")]
+        [HttpPost("AddOrDeleteFavorit/{id}")]
 
-		[Authorize/*(AuthenticationSchemes ="Bearer")*/]
+		[Authorize]
 		public async Task<IActionResult> FlagPropertyAsFavorit(int id)
 		{
 			var command = new AddPropertyToFavoritCommand(id);
 			return Ok(await _mediator.Send(command));
 		}
-
-		[HttpGet("get-favorit-properties/{userId}")]
-		public async Task<IActionResult> GetFavoritProperties(string userId)
+        [Authorize]
+        [HttpGet("GetFavoritProperties")]
+		public async Task<IActionResult> GetFavoritProperties()
 		{
-			var query = new GetFavoritQuery(userId);
+			var query = new GetFavoritQuery();
 			return Ok(await _mediator.Send(query));
 		}
-	}
+        [HttpGet("GetRequestsToAddProperties")]
+        public async Task<IActionResult> GetRequestsToAddProperties()
+        {
+            var query = new GetAllPendingPropertyRequestsQuery();
+            return Ok(await _mediator.Send(query));
+        }
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetPropertyById(int Id)
+        {
+            var query = new GetPropertyByIdRequestsQuery(Id);
+            return Ok(await _mediator.Send(query));
+        }
+        [HttpPost("Filter")]
+        public async Task<IActionResult> FilterProperties([FromBody] FilterPropertiesQuery query)
+        {
+            var result = await _mediator.Send(query);
+            return Ok(result);
+        }
+
+    }
 }

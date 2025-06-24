@@ -42,7 +42,7 @@ namespace Web.Application.Features.Properties.Commands.AddPropertyToFavorit
 			var property = await _unitOfWork.Repository<int, Property>().GetByIdAsync(request.PropertyId);
 			if (property == null)
 			{
-				return new BaseResponse<int>(false, "Property not found!");
+				return new BaseResponse<int>(false, "العقار غير موجود");
 			}
 
 			var isFavorit =   await _dbContext.Favorites.FirstOrDefaultAsync(f => f.UserId == user.Id && f.PropertyId== request.PropertyId);
@@ -50,13 +50,13 @@ namespace Web.Application.Features.Properties.Commands.AddPropertyToFavorit
 			{
 				_dbContext.Remove(isFavorit);	
 				await _unitOfWork.SaveChangesAsync();
-				return new BaseResponse<int>(true, $"Property: {property.Id} flagged as unfavorit!");
+				return new BaseResponse<int>(true, $"تم ازالة هذا العقار من المفضلة");
 			}
             var Favorit = new Favorite { PropertyId = request.PropertyId, UserId = user.Id };
             await _dbContext.AddAsync(Favorit);
             await _unitOfWork.SaveChangesAsync();
 
-			return new BaseResponse<int>(true, $"Property: {property.Id} flagged as favorit!");
+			return new BaseResponse<int>(true, $"تم اضافة هذا العقار للمفضلة");
 
 
 		}

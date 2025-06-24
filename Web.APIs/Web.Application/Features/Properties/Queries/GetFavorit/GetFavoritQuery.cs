@@ -8,6 +8,6 @@ using Web.Application.Response;
 
 namespace Web.Application.Features.Properties.Queries.GetFavorit
 {
-	public record GetFavoritQuery(string userId):IRequest<BaseResponse<List<GetFavoritQueryDto>>>;
+	public record GetFavoritQuery():IRequest<BaseResponse<List<GetFavoritQueryDto>>>;
 	
 }

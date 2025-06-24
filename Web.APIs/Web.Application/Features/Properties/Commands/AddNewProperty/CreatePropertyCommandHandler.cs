@@ -35,6 +35,7 @@ namespace Web.Application.Features.Properties.Commands.AddNewProperty
 
             await _unitOfWork.Repository<int, Property>().AddAsync(property);
             await _unitOfWork.SaveChangesAsync();
+          //  if(request.Images!=null)
             foreach (var image in request.Images)
             {
                 var imageUrl = Media.UploadFile(image, "Property");
@@ -48,7 +49,7 @@ namespace Web.Application.Features.Properties.Commands.AddNewProperty
 
             await _unitOfWork.SaveChangesAsync();
 
-            return new BaseResponse<string>(true, "Property created successfully!");
+            return new BaseResponse<string>(true, "تم اضافة العقار بنجاح");
         }
     }
 }
