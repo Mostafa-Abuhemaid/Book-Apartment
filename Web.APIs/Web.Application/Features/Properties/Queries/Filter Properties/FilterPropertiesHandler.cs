@@ -59,6 +59,17 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
             if (request.HasWifi.HasValue)
                 query = query.Where(p => p.HasWifi == request.HasWifi);
 
+            if (request.ThereIsInstallment.HasValue)
+                query = query.Where(p => p.ThereIsInstallment == request.ThereIsInstallment);
+
+
+            if (request.Governorate!=null)
+                query = query.Where(p => p.Governorate == request.Governorate);
+            if (request.City!=null)
+                query = query.Where(p => p.City == request.City);
+            if (request.PropertyType.HasValue)
+                query = query.Where(p => p.PropertyType == request.PropertyType);
+
             var propertyDtos = query.Select(p => new GetAllPropertiesDto
             {
                 Id = p.Id,
