@@ -58,7 +58,7 @@ namespace Web.Infrastructure.Service
         {
             var appointments = await _dbContext.Appointments
          .Include(a => a.Property)
-             .ThenInclude(p => p.Owner)
+         .ThenInclude(p => p.Owner)
          .ToListAsync();
 
             var result = appointments.Select(a => new GetAppointmentDto
@@ -68,7 +68,7 @@ namespace Web.Infrastructure.Service
                 Tilte = a.Property.Title,
                 OwnerName = a.Property.Owner.FullName,
                 OwnerPhone = a.Property.Owner.PhoneNumber,
-                MainImage = a.Property.MainImage != null ? $"{_configuration["BaseURL"]}/User/{a.Property.MainImage}" : null,
+                MainImage = a.Property.MainImage != null ? $"{_configuration["BaseURL"]}/Property/{a.Property.MainImage}" : null,
                 PropertyType = a.Property.PropertyType,
                 
                 RequesterId = a.Property.OwnerId

@@ -4,8 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Web.Application.DTOs.PropertyDTO;
 using Web.Application.Features.Properties.Commands.AddNewProperty;
 using Web.Application.Features.Properties.Commands.AddPropertyToFavorit;
+using Web.Application.Features.Properties.Queries.Filter_Properties;
+using Web.Application.Features.Properties.Queries.Get_Property_By_Id;
 using Web.Application.Features.Properties.Queries.GetFavorit;
 using Web.Application.Features.Properties.Queries.Requests_To_Add_Properties;
+using Web.Application.Response;
+using Web.Domain.DTOs.PropertyDTO;
 
 namespace Web.APIs.Controllers
 {
@@ -48,5 +52,18 @@ namespace Web.APIs.Controllers
             var query = new GetAllPendingPropertyRequestsQuery();
             return Ok(await _mediator.Send(query));
         }
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetPropertyById(int Id)
+        {
+            var query = new GetPropertyByIdRequestsQuery(Id);
+            return Ok(await _mediator.Send(query));
+        }
+        [HttpPost("Filter")]
+        public async Task<IActionResult> FilterProperties([FromBody] FilterPropertiesQuery query)
+        {
+            var result = await _mediator.Send(query);
+            return Ok(result);
+        }
+
     }
 }

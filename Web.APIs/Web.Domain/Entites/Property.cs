@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,8 +18,8 @@ public class Property:BaseClass<int>
     public string? Bathrooms { get; set; }
     public double? Area { get; set; }
     public int? Price { get; set; }
-
     public string? Floor { get; set; }
+   
     public PropertyType PropertyType { get; set; } //بيع او ايجار
     public string? Governorate { get; set; } // المحافظة 
     public string? City { get; set; } // المدينة 
@@ -30,7 +31,7 @@ public class Property:BaseClass<int>
     public bool? HasWifi { get; set; }
     public bool IsActive {  get; set; }=false;
     public string? MainImage { get; set; }
-
+    public ThereIsInstallment? ThereIsInstallment {  get; set; }
     public string OwnerId { get; set; }
     public AppUser Owner { get; set; }
 

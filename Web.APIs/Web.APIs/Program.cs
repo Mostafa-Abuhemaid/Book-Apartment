@@ -84,6 +84,7 @@ namespace Web.APIs
             builder.Services.AddHttpContextAccessor();
 			builder.Services.AddValidatorsFromAssembly(typeof(Application.AssemblyReference).Assembly); 
 			builder.Services.AddMapster();
+            TypeAdapterConfig.GlobalSettings.Scan(typeof(PropertyMapping).Assembly);
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 			builder.Services.AddTransient<IEmailService, EmailService>();

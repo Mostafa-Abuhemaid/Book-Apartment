@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using Web.Application.Response;
 using Web.Domain.DTOs.PropertyDTO;
 
-namespace Web.Application.Features.Properties.Queries.Requests_To_Add_Properties
+namespace Web.Application.Features.Properties.Queries.Get_Property_By_Id
 {
-    public record GetAllPendingPropertyRequestsQuery : IRequest<BaseResponse<List<RequestsToAddPropertiesDto>>>
+    public record GetPropertyByIdRequestsQuery(int PropertyId) : IRequest<BaseResponse<GetPropertyDto>>
     {
+
 
     }
 }

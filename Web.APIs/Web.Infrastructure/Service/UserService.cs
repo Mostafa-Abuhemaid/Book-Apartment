@@ -51,14 +51,17 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<bool>(true, $"User {model.UserName} Updated successfully");
         }
 
-        public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber = 10, int pageSize = 10)
+        public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber, int pageSize)
         {
-           
-            int skip = (pageNumber - 1) * pageSize;
+            var totalCount = await _userManager.Users.CountAsync();
 
-           
+             pageSize = totalCount < 10 ? totalCount : 10;
+        
+             pageNumber = 1;
+
             var users = await _userManager.Users
-                .Skip(skip)
+                .OrderBy(u => u.Id)
+                .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
 
@@ -72,7 +75,6 @@ namespace Web.Infrastructure.Service
                     Id = user.Id,
                     UserName = user.UserName,
                     Email = user.Email,
-
                     Role = roles.FirstOrDefault()
                 };
 

@@ -8,14 +8,9 @@ using System.Threading.Tasks;
 namespace Web.Domain.Enums
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
-    public enum PropertyNature
+    public enum ThereIsInstallment
     {
-        بيت,
-        سطح,
-        شاليه,
-        فيلا,
-        شقة,
-        غرفة,
-        أرض
+        نعم ,
+        لا
     }
 }
