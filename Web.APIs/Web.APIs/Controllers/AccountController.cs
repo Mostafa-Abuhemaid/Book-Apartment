@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Web.Application.DTOs;
 using Web.Application.DTOs.AccountDTO;
+using Web.Application.Interfaces;
 using Web.Application.Response;
+using Web.Domain.DTOs.AccountDTO;
 using Web.Infrastructure.Service;
 
 namespace Web.APIs.Controllers
@@ -11,11 +13,17 @@ namespace Web.APIs.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly AccountService _accountService;
-        public AccountController(AccountService accountService)
+        private readonly IAccountService _accountService;
+        public AccountController(IAccountService accountService)
         {
-
             _accountService = accountService;
+        }
+        [HttpPost("Register")]
+        public async Task<ActionResult<BaseResponse<TokenDTO>>> RegisterAsync(RegisterDto registerDto)
+        { 
+            var result = await _accountService.RegisterAsync(registerDto);
+            return result.Success ? Ok(result) : BadRequest(result);
+
         }
         [HttpPost("Login")]
         public async Task<ActionResult<BaseResponse<TokenDTO>>> Login(LoginDTO loginDto)

@@ -17,20 +17,25 @@ namespace Web.Infrastructure.Service
     public class UserService : IUserService
     {
         private readonly UserManager<AppUser> _userManager;
-        private readonly IMapper _mapper;
-        public UserService(UserManager<AppUser> userManager, IMapper mapper)
+       
+        public UserService(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
-            _mapper = mapper;
+           
         }
-        public async Task<BaseResponse<bool>> DeleteUserByEmailAsync(string email)
+        public async Task<BaseResponse<bool>> DeleteUserByIdAsync(string userId)
         {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) return new BaseResponse<bool>(false, $"No User with this email : {email}");
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+                return new BaseResponse<bool>(false, $"No user found with ID: {userId}");
 
             var result = await _userManager.DeleteAsync(user);
-            return new BaseResponse<bool>(true, $"User {email} deleted successfully");
+            if (!result.Succeeded)
+                return new BaseResponse<bool>(false, "Failed to delete user");
+
+            return new BaseResponse<bool>(true, $"User with Name {user.FullName} deleted successfully");
         }
+
 
         public async Task<BaseResponse<bool>> EditUserAsync([FromBody] UserDto model)
         {
@@ -46,9 +51,20 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<bool>(true, $"User {model.UserName} Updated successfully");
         }
 
-        public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync()
+        public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber, int pageSize)
         {
-            var users = await _userManager.Users.ToListAsync();
+            var totalCount = await _userManager.Users.CountAsync();
+
+             pageSize = totalCount < 10 ? totalCount : 10;
+        
+             pageNumber = 1;
+
+            var users = await _userManager.Users
+                .OrderBy(u => u.Id)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
             var userDtos = new List<UserDto>();
 
             foreach (var user in users)
@@ -59,7 +75,6 @@ namespace Web.Infrastructure.Service
                     Id = user.Id,
                     UserName = user.UserName,
                     Email = user.Email,
-
                     Role = roles.FirstOrDefault()
                 };
 
@@ -69,29 +84,31 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<List<UserDto>>(true, "Reached Users successfully", userDtos);
         }
 
+
         public async Task<BaseResponse<UserDto>> GetUserDetailsAsync(string userId)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            if (user == null) return new BaseResponse<UserDto>(false, $"No User with this Id : {userId}");
-            var userDTO = _mapper.Map<UserDto>(user);
-
-            return new BaseResponse<UserDto>(true, $"Reached User with Id : {userId}", userDTO);
+            //  var user = await _userManager.FindByIdAsync(userId);
+            //  if (user == null) return new BaseResponse<UserDto>(false, $"No User with this Id : {userId}");
+            //  var userDTO = _mapper.Map<UserDto>(user);
+            //
+            //  return new BaseResponse<UserDto>(true, $"Reached User with Id : {userId}", userDTO);
+            return null;
         }
 
-        public async Task<BaseResponse<bool>> LockUserByEmailAsync(string email)
+        public async Task<BaseResponse<bool>> LockUserByEmailAsync(string UserId)
         {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) new BaseResponse<bool>(false, $"No User with this email : {email}");
+            var user = await _userManager.FindByIdAsync(UserId);
+            if (user == null) new BaseResponse<bool>(false, $"No User with this Id ");
 
             await _userManager.SetLockoutEnabledAsync(user, true);
             await _userManager.SetLockoutEndDateAsync(user, DateTimeOffset.MaxValue);
             return new BaseResponse<bool>(true, $"User {user.UserName} locked successfully");
         }
 
-        public async Task<BaseResponse<bool>> UnlockUserByEmailAsync(string email)
+        public async Task<BaseResponse<bool>> UnlockUserByEmailAsync(string UserId)
         {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) return new BaseResponse<bool>(false, $"No User with this email : {email}");
+            var user = await _userManager.FindByIdAsync(UserId);
+            if (user == null) return new BaseResponse<bool>(false, $"No User with this Id");
 
             await _userManager.SetLockoutEndDateAsync(user, DateTimeOffset.UtcNow);
             return new BaseResponse<bool>(true, $"User {user.UserName} unlocked successfully");

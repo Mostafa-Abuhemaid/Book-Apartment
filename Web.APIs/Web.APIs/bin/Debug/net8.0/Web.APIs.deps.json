@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.14",
           "Swashbuckle.AspNetCore": "6.4.0",
           "Web.Application": "1.0.0",
+          "Web.Domain": "1.0.0",
           "Web.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -1121,26 +1122,22 @@
           "MediatR": "12.5.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
-          "Web.Domain": "1.0.0"
+          "Web.Domain": "1.0.0",
+          "Web.Infrastructure": "1.0.0"
         },
         "runtime": {
-          "Web.Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Web.Application.dll": {}
         }
       },
       "Web.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.14",
           "Microsoft.EntityFrameworkCore": "8.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14"
         },
         "runtime": {
-          "Web.Domain.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Web.Domain.dll": {}
         }
       },
       "Web.Infrastructure/1.0.0": {
@@ -1149,14 +1146,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.14",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.14",
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
-          "Web.Application": "1.0.0",
           "Web.Domain": "1.0.0"
         },
         "runtime": {
-          "Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Web.Infrastructure.dll": {}
         }
       }
     }

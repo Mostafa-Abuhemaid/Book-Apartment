@@ -19,10 +19,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Web.Application\Web.Application.csproj" />
+    <ProjectReference Include="..\Web.Domain\Web.Domain.csproj" />
     <ProjectReference Include="..\Web.Infrastructure\Web.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\User\" />
     <Folder Include="wwwroot\Property\" />
   </ItemGroup>
 

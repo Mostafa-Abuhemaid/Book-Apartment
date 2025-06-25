@@ -35,6 +35,9 @@
               "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Application\\Web.Application.csproj": {
                 "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Application\\Web.Application.csproj"
               },
+              "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj": {
+                "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj"
+              },
               "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj": {
                 "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj"
               }
@@ -132,6 +135,9 @@
             "projectReferences": {
               "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj": {
                 "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj"
+              },
+              "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj": {
+                "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Infrastructure\\Web.Infrastructure.csproj"
               }
             }
           }
@@ -241,6 +247,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.14, )"
@@ -308,9 +318,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Application\\Web.Application.csproj": {
-                "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Application\\Web.Application.csproj"
-              },
               "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj": {
                 "projectPath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj"
               }

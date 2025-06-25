@@ -11,7 +11,7 @@ namespace Web.APIs.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	[Authorize]
+
 	public class ReviewController : ControllerBase
 	{
 		private readonly IMediator _mediator;
@@ -20,13 +20,13 @@ namespace Web.APIs.Controllers
 			_mediator = mediator;
 		}
 
-		[HttpPost("add-review")]
+		[HttpPost()]
 		public async Task<IActionResult> AddReview([FromBody] AddReviewCommand command)
 		{
 			return Ok(await _mediator.Send(command));
 		}
 
-		[HttpGet("get-property-reviews/{id}")]
+		[HttpGet("{id}")]
 		public async Task<IActionResult> GetPropertyRevies(int id)
 		{
 			var command = new GetPropertyReviewsQuery(id);

@@ -238,7 +238,10 @@ namespace Web.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("AppointmentDate")
+                    b.Property<string>("ConfirmedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsConfirmed")
@@ -246,9 +249,6 @@ namespace Web.Infrastructure.Migrations
 
                     b.Property<int>("PropertyId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("RequestedAt")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -271,9 +271,6 @@ namespace Web.Infrastructure.Migrations
                     b.Property<int>("PropertyId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
                     b.HasKey("UserId", "PropertyId");
 
                     b.HasIndex("PropertyId");
@@ -289,43 +286,68 @@ namespace Web.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("Area")
+                    b.Property<double?>("Area")
                         .HasColumnType("float");
 
-                    b.Property<int>("Bathrooms")
+                    b.Property<int?>("AvailabilityStatus")
                         .HasColumnType("int");
+
+                    b.Property<string>("Bathrooms")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Floor")
-                        .HasColumnType("int");
+                    b.Property<string>("Floor")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Governorate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("HasWifi")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
+
+                    b.Property<string>("MainImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("Price")
+                    b.Property<int?>("Price")
                         .HasColumnType("int");
+
+                    b.Property<string>("PriceRentType")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PropertyType")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rooms")
+                    b.Property<double?>("RentAdvance")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("RentPrice")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("RentType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Rooms")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ThereIsInstallment")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Type")
@@ -345,6 +367,9 @@ namespace Web.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
