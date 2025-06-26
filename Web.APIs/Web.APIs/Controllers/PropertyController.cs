@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Web.Application.DTOs.PropertyDTO;
 using Web.Application.Features.Properties.Commands.AddNewProperty;
 using Web.Application.Features.Properties.Commands.AddPropertyToFavorit;
+using Web.Application.Features.Properties.Commands.DeleteProperty;
 using Web.Application.Features.Properties.Queries.Filter_Properties;
 using Web.Application.Features.Properties.Queries.Get_All_Property;
 using Web.Application.Features.Properties.Queries.Get_Property_By_Id;
@@ -71,6 +72,14 @@ namespace Web.APIs.Controllers
             var result = await _mediator.Send(query);
             return Ok(result);
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteProperty(int id)
+        {
+            var property= new DeletePropertyCommand (id);
+           
+            return Ok(await _mediator.Send(property));
+        }
+
 
 
     }

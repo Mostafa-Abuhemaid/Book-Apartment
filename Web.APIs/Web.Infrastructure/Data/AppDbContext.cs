@@ -43,19 +43,19 @@ namespace Web.Infrastructure.Data
                 .HasOne(f => f.Property)
                 .WithMany()
                 .HasForeignKey(f => f.PropertyId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
             ///////////////////////
             builder.Entity<PropertyReview>()
      .HasOne(r => r.Property)
      .WithMany(p => p.PropertyReviews) 
      .HasForeignKey(r => r.PropertyId)
-     .OnDelete(DeleteBehavior.Restrict);
+     .OnDelete(DeleteBehavior.Cascade);
 
             builder.Entity<PropertyReview>()
                 .HasOne(r => r.User)
                 .WithMany(u => u.PropertyReviews)
                 .HasForeignKey(r => r.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
+               .OnDelete(DeleteBehavior.Restrict);
             ////////////////////
 
             builder.Entity<Appointment>()
@@ -68,7 +68,7 @@ namespace Web.Infrastructure.Data
                 .HasOne(a => a.Property)
                 .WithMany()
                 .HasForeignKey(a => a.PropertyId)
-                 .OnDelete(DeleteBehavior.Restrict);
+               .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

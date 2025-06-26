@@ -29,8 +29,24 @@ namespace Web.Application.Files
             // 1. get file path
             string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", folderName, fileName);
             // 2. check if it not exist
-            if (File.Exists(filePath))
-                File.Delete(filePath);
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                    Console.WriteLine($"✅ Deleted file: {filePath}");
+                }
+                else
+                {
+                    Console.WriteLine($"⚠️ File not found: {filePath}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error deleting file: {ex.Message}");
+            }
+
+
         }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Web.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using Web.Infrastructure.Data;
 namespace Web.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250626111652_edit delete of favorite and appointment")]
+    partial class editdeleteoffavoriteandappointment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -534,7 +537,7 @@ namespace Web.Infrastructure.Migrations
                     b.HasOne("Web.Domain.Entites.Property", "Property")
                         .WithMany("PropertyReviews")
                         .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Web.Domain.Entites.AppUser", "User")

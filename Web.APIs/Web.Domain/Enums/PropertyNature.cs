@@ -17,6 +17,7 @@ namespace Web.Domain.Enums
         شقة,
         غرفة,
         أرض,
-        محل
+        محل,
+        أستديو
     }
 }
