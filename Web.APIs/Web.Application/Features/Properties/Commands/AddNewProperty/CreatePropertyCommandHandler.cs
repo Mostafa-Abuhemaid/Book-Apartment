@@ -35,7 +35,7 @@ namespace Web.Application.Features.Properties.Commands.AddNewProperty
 
             await _unitOfWork.Repository<int, Property>().AddAsync(property);
             await _unitOfWork.SaveChangesAsync();
-          //  if(request.Images!=null)
+            if(request.Images!=null)
             foreach (var image in request.Images)
             {
                 var imageUrl = Media.UploadFile(image, "Property");

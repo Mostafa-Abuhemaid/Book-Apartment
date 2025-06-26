@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Web.Application.DTOs.PropertyDTO;
 using Web.Application.Features.Properties.Commands.AddNewProperty;
 using Web.Application.Features.Properties.Commands.AddPropertyToFavorit;
+using Web.Application.Features.Properties.Commands.ApproveProperty;
 using Web.Application.Features.Properties.Commands.DeleteProperty;
 using Web.Application.Features.Properties.Queries.Filter_Properties;
 using Web.Application.Features.Properties.Queries.Get_All_Property;
@@ -81,6 +82,13 @@ namespace Web.APIs.Controllers
         }
 
 
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> AcceptProperty(int id)
+        {
+            var property = new ApprovePropertyCommand(id);
+            var result = await _mediator.Send(property);
+            return Ok(result);
+        }
 
     }
 }

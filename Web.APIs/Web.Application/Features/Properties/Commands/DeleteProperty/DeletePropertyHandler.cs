@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Web.Application.Files;
 using Web.Application.Response;
 using Web.Infrastructure.Data;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Web.Application.Features.Properties.Commands.DeleteProperty
 {
@@ -25,8 +26,7 @@ namespace Web.Application.Features.Properties.Commands.DeleteProperty
             var property = await _context.Properties
                    .Include(p => p.Images)
                 .FirstOrDefaultAsync(p => p.Id == request.PropertyId, cancellationToken);
-            Console.WriteLine($"count the photoes before delete : {property.Images?.Count}");
-
+          
             if (property == null)
                 return new BaseResponse<bool>(false, "العقار غير موجود");
 
@@ -38,8 +38,10 @@ namespace Web.Application.Features.Properties.Commands.DeleteProperty
                     if (!string.IsNullOrEmpty(image.ImageUrl))
                          Media.DeleteFile(image.ImageUrl, "Property");
             }
-               
-                    
+            if (property.MainImage != null)
+                Media.DeleteFile(property.MainImage, "Property");
+
+
             _context.Properties.Remove(property);
             await _context.SaveChangesAsync(cancellationToken);
             Console.WriteLine($" count the photoes after delete : {property.Images?.Count}");
