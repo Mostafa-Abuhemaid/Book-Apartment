@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -54,27 +55,35 @@ namespace Web.Infrastructure.Service
             throw new NotImplementedException();
         }
 
-        public async Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync()
+        public async Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync(int PageNumber, int PageSize)
         {
-            var appointments = await _dbContext.Appointments
-         .Include(a => a.Property)
-         .ThenInclude(p => p.Owner)
-         .ToListAsync();
+            var query = _dbContext.Appointments
+        .Select(a => new GetAppointmentDto
+        {
+            Id = a.Id,
+            PropertyId = a.Property.Id,
+            Tilte = a.Property.Title,
+            OwnerName = a.Property.Owner.FullName,
+            OwnerPhone = a.Property.Owner.PhoneNumber,
+            MainImage = a.Property.MainImage != null
+                ? $"{_configuration["BaseURL"]}/Property/{a.Property.MainImage}"
+                : null,
+            PropertyType = a.Property.PropertyType,
+            RequesterId = a.UserId,
+            RequesterName=a.User.FullName,
+            RequesterPhone=a.User.PhoneNumber,
+            CreatedAt= a.CreatedAt
 
-            var result = appointments.Select(a => new GetAppointmentDto
-            {
-                Id = a.Id,
-                PropertyId = a.Property.Id,
-                Tilte = a.Property.Title,
-                OwnerName = a.Property.Owner.FullName,
-                OwnerPhone = a.Property.Owner.PhoneNumber,
-                MainImage = a.Property.MainImage != null ? $"{_configuration["BaseURL"]}/Property/{a.Property.MainImage}" : null,
-                PropertyType = a.Property.PropertyType,
-                
-                RequesterId = a.Property.OwnerId
-            }).ToList();
+        });
 
-            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",result);
+            int totalCount = await query.CountAsync();
+
+            var pagedData = await query
+            .Skip((PageNumber - 1) * PageSize)
+            .Take(PageSize)
+                .ToListAsync();
+
+            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح", totalCount,PageNumber,PageSize,pagedData);
         }
     }
 }

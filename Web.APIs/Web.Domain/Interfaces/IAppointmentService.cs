@@ -11,7 +11,7 @@ namespace Web.Domain.Interfaces
     public interface IAppointmentService
     {
         Task<BaseResponse<bool>> AddNewAppointmentAsync(CreateAppointmentDto dto);
-        Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync();
+        Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync(int PageNumber, int PageSize);
         Task<BaseResponse<bool>> DeleteAppointmentAsync(string id);
         
     }

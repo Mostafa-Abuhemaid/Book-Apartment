@@ -14,12 +14,24 @@ namespace Web.Application.Response
         public string Message { get; set; }
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public T? Data { get; set; }
-
+        public int? TotalCount { get; set; } // عدد كل العناصر
+        public int? PageNumber { get; set; }
+        public int? PageSize { get; set; }
         public BaseResponse(bool success, string message, T data)
         {
             Success = success;
             Message = message;
             Data = data;
+        }
+        public BaseResponse(bool success, string message, int totalCount,int pageNumber,int pageSize, T data)
+        {
+            Success = success;
+            Message = message;
+            TotalCount = totalCount;
+            PageNumber = pageNumber;
+            PageSize = pageSize;
+            Data = data;
+          
         }
         public BaseResponse(bool success, string message)
         {

@@ -24,9 +24,9 @@ namespace Web.APIs.Controllers
 
         }
         [HttpGet()]
-        public async Task<IActionResult> GetAllAppointments()
+        public async Task<IActionResult> GetAllAppointments(int PageNumber, int PageSize)
         {
-            var result = await _appointmentService.GetAllAppointmentAsync();
+            var result = await _appointmentService.GetAllAppointmentAsync( PageNumber,  PageSize);
             return result.Success ? Ok(result) : BadRequest(result);
         }
     }
