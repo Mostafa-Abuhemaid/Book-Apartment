@@ -20,7 +20,7 @@ namespace Web.APIs.Controllers
         public async Task<IActionResult> AddNewAppointmentAsync([FromBody]CreateAppointmentDto dto)
         {
             var result = await _appointmentService.AddNewAppointmentAsync(dto);
-            return result.Success ? Ok(result) : BadRequest(result);
+            return Ok(result);
 
         }
         [HttpGet()]

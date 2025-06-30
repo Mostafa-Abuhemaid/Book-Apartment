@@ -30,8 +30,8 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
         {
             var query = _dbContext.Properties
             .Include(p => p.Images)
-            .AsNoTracking()
-            .Where(p => p.IsActive==false);
+            .AsNoTracking();
+            // Where(p => p.IsActive==true);
 
             if (request.Type!= null)
                 query = query.Where(p => p.RentType== request.Type);

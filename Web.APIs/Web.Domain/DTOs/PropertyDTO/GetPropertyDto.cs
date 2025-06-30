@@ -22,6 +22,7 @@ namespace Web.Domain.DTOs.PropertyDTO
         public string? Governorate { get; set; } // المحافظة 
         public string? City { get; set; } // المدينة 
         public RentType? RentType { get; set; } // طلابي ولا اسر 
+        public bool? IsFurnished { get; set; }  // مفروشة ولا لاء 
         public double? RentAdvance { get; set; } // مقدم الايجار 
         public double? RentPrice { get; set; }
         public string? PriceRentType { get; set; }// شهري وسنوي 

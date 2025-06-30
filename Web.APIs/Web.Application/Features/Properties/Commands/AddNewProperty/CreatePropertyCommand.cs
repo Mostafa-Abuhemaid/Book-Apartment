@@ -15,6 +15,7 @@ namespace Web.Application.Features.Properties.Commands.AddNewProperty
         double? Area,
         int? Price,
         string? Floor,
+        bool? IsFurnished,
         PropertyType PropertyType,
         string? Governorate,
         string? City,

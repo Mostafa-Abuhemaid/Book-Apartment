@@ -19,7 +19,7 @@ public class Property:BaseClass<int>
     public double? Area { get; set; }
     public int? Price { get; set; }
     public string? Floor { get; set; }
-   
+    public bool? IsFurnished { get; set; } = false; // مفروشة ولا لاء 
     public PropertyType PropertyType { get; set; } //بيع او ايجار
     public string? Governorate { get; set; } // المحافظة 
     public string? City { get; set; } // المدينة 

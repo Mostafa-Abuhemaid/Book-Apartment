@@ -83,7 +83,7 @@ namespace Web.Infrastructure.Service
             .Take(PageSize)
                 .ToListAsync();
 
-            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح", totalCount,PageNumber,PageSize,pagedData);
+            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",pagedData ,totalCount,PageNumber,PageSize);
         }
     }
 }

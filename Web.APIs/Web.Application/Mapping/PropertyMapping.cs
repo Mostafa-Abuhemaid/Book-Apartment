@@ -14,8 +14,12 @@ namespace Web.Application.Mapping
     {
         public void Register(TypeAdapterConfig config)
         {
-            config.NewConfig<Property, GetFavoritQueryDto>();
-///////////////////////////////////////////////////////////////////
+            config.NewConfig<Property, GetFavoritQueryDto>()
+             .Map(dest => dest.MainImage,
+         src => string.IsNullOrEmpty(src.MainImage)
+             ? null
+             : $"http://realestateunits.runasp.net/Property/{src.MainImage}");
+            ///////////////////////////////////////////////////////////////////
             config.NewConfig<Property, GetPropertyDto>()
                 .Map(dest => dest.Images,
          src => src.Images
@@ -34,7 +38,7 @@ namespace Web.Application.Mapping
     .Map(dest => dest.MainImage,
          src => string.IsNullOrEmpty(src.MainImage)
              ? null
-             : $"http://realestateunits.runasp.net/User/{src.MainImage}");
+             : $"http://realestateunits.runasp.net/Property/{src.MainImage}");
 
         }
     }
