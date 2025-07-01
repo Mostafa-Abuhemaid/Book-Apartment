@@ -6,11 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Web.Application.Response;
 using Web.Domain.DTOs.PropertyDTO;
+using Web.Domain.Enums;
 
 namespace Web.Application.Features.Properties.Queries.Requests_To_Add_Properties
 {
-    public record GetAllPendingPropertyRequestsQuery : IRequest<BaseResponse<List<RequestsToAddPropertiesDto>>>
+    public record GetAllPendingPropertyRequestsQuery( PropertyType PropertyType,  int PageNumber, int PageSize) : IRequest<BaseResponse<List<RequestsToAddPropertiesDto>>>
     {
-
+       
     }
 }

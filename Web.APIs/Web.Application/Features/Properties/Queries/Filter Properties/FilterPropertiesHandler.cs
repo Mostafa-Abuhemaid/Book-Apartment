@@ -51,6 +51,9 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
             if (request.MaxPrice.HasValue)
                 query = query.Where(p => p.Price <= request.MaxPrice.Value);
 
+            if (request.IsFurnished.HasValue)
+                query = query.Where(p => p.IsFurnished == request.IsFurnished);
+
             if (!string.IsNullOrEmpty(request.Floor))
             {
                 query = query.Where(p => p.Floor == request.Floor ||
@@ -81,7 +84,7 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
                 Price = p.Price,
                 Floor = p.Floor,
                 MainImage = !string.IsNullOrEmpty(p.MainImage)
-           ? $"{_configuration["BaseURL"]}/User/{p.MainImage}"
+           ? $"{_configuration["BaseURL"]}/Property/{p.MainImage}"
            : null,
                 Type=p.Type,
                 CreatedAt=p.CreatedAt

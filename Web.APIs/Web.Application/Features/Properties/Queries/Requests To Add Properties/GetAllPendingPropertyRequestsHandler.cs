@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -24,20 +25,31 @@ namespace Web.Application.Features.Properties.Queries.Requests_To_Add_Properties
 
         public async Task<BaseResponse<List<RequestsToAddPropertiesDto>>> Handle(GetAllPendingPropertyRequestsQuery request, CancellationToken cancellationToken)
         {
-            var requests = await _dbContext.Properties
-                .Where(p => p.IsActive==false)
-                .Include(p => p.Owner)
-                .Select(p => new RequestsToAddPropertiesDto
-                {
-                    Id = p.Id,
-                    City = p.City,                  
-                    UserFullName = p.Owner.FullName,
-                    UserImage = p.Owner.ProfileImage != null ? $"{_configuration["BaseURL"]}/User/{p.MainImage}" : null,
-                    PropertyMainImage = p.MainImage != null ? $"{_configuration["BaseURL"]}/Property/{p.MainImage}" : null,
-                })
-                .ToListAsync(cancellationToken);
+            var query = _dbContext.Properties
+       .Where(p => p.PropertyType == request.PropertyType&& p.IsActive==false)
+       .AsNoTracking()
+       .OrderByDescending(p => p.Id)
+       .AsQueryable();
+            int totalCoute = query.Count();
+            int skip = (request.PageNumber - 1) * request.PageSize;
 
-            return new BaseResponse<List<RequestsToAddPropertiesDto>>(true,"تم جلب الطلبات بنجاح",requests);
+            var properties = await query
+                .Skip(skip)
+                .Take(request.PageSize)
+               .Select(p => new RequestsToAddPropertiesDto
+               {
+                   Id = p.Id,
+                   Governorate=p.Governorate,
+                   PropertyType = request.PropertyType,
+                   City = p.City,
+                   UserFullName = p.Owner.FullName,
+                   CreatedAt=p.CreatedAt,
+                   UserImage = p.Owner.ProfileImage != null ? $"{_configuration["BaseURL"]}/User/{p.MainImage}" : null,
+                   PropertyMainImage = p.MainImage != null ? $"{_configuration["BaseURL"]}/Property/{p.MainImage}" : null,
+               })
+.ToListAsync(cancellationToken);
+
+            return new BaseResponse<List<RequestsToAddPropertiesDto>>(true, "تم جلب العقارات بنجاح", properties,totalCoute, request.PageNumber, request.PageSize);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Web.Domain.DTOs.PropertyDTO
         public string City { get; set; }    
         public string UserFullName { get; set; }
         public string UserImage { get; set; }
+        public DateTime CreatedAt { get; set; } 
         public PropertyType PropertyType { get; set; }
         public string PropertyMainImage { get; set; }
     }

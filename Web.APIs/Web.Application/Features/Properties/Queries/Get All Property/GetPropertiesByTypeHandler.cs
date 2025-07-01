@@ -45,7 +45,7 @@ namespace Web.Application.Features.Properties.Queries.Get_All_Property
                     Price = p.Price,
                     Floor = p.Floor,
                     MainImage = !string.IsNullOrEmpty(p.MainImage)
-           ? $"{_configuration["BaseURL"]}/User/{p.MainImage}"
+           ? $"{_configuration["BaseURL"]}/Property/{p.MainImage}"
            : null,
                     Type = p.Type,
                     CreatedAt = p.CreatedAt,

@@ -13,6 +13,7 @@ using Web.Application.Features.Properties.Queries.GetFavorit;
 using Web.Application.Features.Properties.Queries.Requests_To_Add_Properties;
 using Web.Application.Response;
 using Web.Domain.DTOs.PropertyDTO;
+using Web.Domain.Enums;
 
 namespace Web.APIs.Controllers
 {
@@ -50,9 +51,9 @@ namespace Web.APIs.Controllers
 			return Ok(await _mediator.Send(query));
 		}
         [HttpGet("GetRequestsToAddProperties")]
-        public async Task<IActionResult> GetRequestsToAddProperties()
+        public async Task<IActionResult> GetRequestsToAddProperties(PropertyType PropertyType, int PageSize, int PageNumber)
         {
-            var query = new GetAllPendingPropertyRequestsQuery();
+            var query = new GetAllPendingPropertyRequestsQuery(PropertyType, PageNumber, PageSize);
             return Ok(await _mediator.Send(query));
         }
         [HttpGet("{Id}")]
