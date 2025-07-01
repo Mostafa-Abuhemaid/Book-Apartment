@@ -10,7 +10,10 @@ using System.Threading.Tasks;
 using Web.Application.DTOs.UserDTO;
 using Web.Application.Interfaces;
 using Web.Application.Response;
+using Web.Domain.DTOs.PropertyDTO;
 using Web.Domain.Entites;
+
+
 
 namespace Web.Infrastructure.Service
 {
@@ -54,34 +57,27 @@ namespace Web.Infrastructure.Service
         public async Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber, int pageSize)
         {
             var totalCount = await _userManager.Users.CountAsync();
-
-             pageSize = totalCount < 10 ? totalCount : 10;
-        
-             pageNumber = 1;
+         
 
             var users = await _userManager.Users
                 .OrderBy(u => u.Id)
+                 .AsNoTracking()
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
-                .ToListAsync();
-
-            var userDtos = new List<UserDto>();
-
-            foreach (var user in users)
-            {
-                var roles = await _userManager.GetRolesAsync(user);
-                var userDto = new UserDto
+                .Select(user => new UserDto
                 {
                     Id = user.Id,
-                    UserName = user.UserName,
+                    UserName = user.FullName,
                     Email = user.Email,
-                    Role = roles.FirstOrDefault()
-                };
+                    PhoneNumber = user.PhoneNumber,
+                    IsBlocked = user.LockoutEnd != null && user.LockoutEnd > DateTimeOffset.UtcNow
+                })
+        .ToListAsync();
 
-                userDtos.Add(userDto);
-            }
+          
 
-            return new BaseResponse<List<UserDto>>(true, "Reached Users successfully", userDtos);
+
+            return new BaseResponse<List<UserDto>>(true, "Reached Users successfully", users, totalCount,pageNumber,pageSize);
         }
 
 
