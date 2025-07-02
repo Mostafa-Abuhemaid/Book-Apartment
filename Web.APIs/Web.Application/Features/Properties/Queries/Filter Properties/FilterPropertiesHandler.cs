@@ -73,8 +73,11 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
                 query = query.Where(p => p.City == request.City);
             if (request.PropertyType.HasValue)
                 query = query.Where(p => p.PropertyType == request.PropertyType);
-
-            var propertyDtos = query.Select(p => new GetAllPropertiesDto
+            var totalCount = await query.CountAsync(cancellationToken);
+            var propertyDtos = await query
+         .OrderByDescending(p => p.CreatedAt)
+         .Skip((request.PageNumber - 1) * request.PageSize)
+         .Take(request.PageSize).Select(p => new GetAllPropertiesDto
             {
                 Id = p.Id,
                 Governorate = p.Governorate,
@@ -89,9 +92,9 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
                 Type=p.Type,
                 CreatedAt=p.CreatedAt
                
-            }).ToList();
+            }).ToListAsync();
 
-            return new BaseResponse<List<GetAllPropertiesDto>>(true, "نتائج البحث ", propertyDtos);
+            return new BaseResponse<List<GetAllPropertiesDto>>(true, "نتائج البحث ", propertyDtos, totalCount, request.PageNumber,request.PageSize);
         }
     }
 }

@@ -25,5 +25,7 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
         public bool? HasWifi { get; set; }
         public bool? IsFurnished { get; set; }  // مفروشة ولا لاء 
         public ThereIsInstallment? ThereIsInstallment { get; set; } = null;
-    }
+        public int PageSize { get; set; }
+        public int PageNumber { get; set; }
+     }
 }

@@ -42,5 +42,11 @@ namespace Web.APIs.Controllers
             var user = await _userService.GetAllUsersAsync( pageNumber,  pageSize);
             return user.Success ? Ok(user) : BadRequest(user);
         }
+        [HttpGet("GetAllAdmins")]
+        public async Task<IActionResult> GetAllAdmins()
+        {
+            var user = await _userService.GetAdminDetailsAsync();
+            return user.Success ? Ok(user) : BadRequest(user);
+        }
     }
 }

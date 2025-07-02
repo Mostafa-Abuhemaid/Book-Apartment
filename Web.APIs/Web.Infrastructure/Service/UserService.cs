@@ -14,7 +14,6 @@ using Web.Domain.DTOs.PropertyDTO;
 using Web.Domain.Entites;
 
 
-
 namespace Web.Infrastructure.Service
 {
     public class UserService : IUserService
@@ -81,15 +80,21 @@ namespace Web.Infrastructure.Service
         }
 
 
-        public async Task<BaseResponse<UserDto>> GetUserDetailsAsync(string userId)
+        public async Task<BaseResponse<List<UserDto>>> GetAdminDetailsAsync()
         {
-            //  var user = await _userManager.FindByIdAsync(userId);
-            //  if (user == null) return new BaseResponse<UserDto>(false, $"No User with this Id : {userId}");
-            //  var userDTO = _mapper.Map<UserDto>(user);
-            //
-            //  return new BaseResponse<UserDto>(true, $"Reached User with Id : {userId}", userDTO);
-            return null;
+            var adminUsers = await _userManager.GetUsersInRoleAsync("Admin");
+
+            var adminDtos = adminUsers.Select(u => new UserDto
+            {
+                Id = u.Id,
+                UserName = u.FullName,
+                Email = u.Email,
+                PhoneNumber = u.PhoneNumber,
+            }).ToList();
+
+            return new BaseResponse<List<UserDto>>(true, "تم الوصول الي البيانات بنجاح", adminDtos);
         }
+
 
         public async Task<BaseResponse<bool>> LockUserByEmailAsync(string UserId)
         {

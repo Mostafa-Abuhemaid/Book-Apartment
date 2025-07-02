@@ -10,7 +10,7 @@ namespace Web.Application.Interfaces
 {
     public interface IUserService
     {
-        Task<BaseResponse<UserDto>> GetUserDetailsAsync(string userId);
+        Task<BaseResponse<List<UserDto>>> GetAdminDetailsAsync();
         Task<BaseResponse<List<UserDto>>> GetAllUsersAsync(int pageNumber , int pageSize );
         Task<BaseResponse<bool>> EditUserAsync( UserDto model);
 

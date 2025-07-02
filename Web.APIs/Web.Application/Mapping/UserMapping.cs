@@ -15,7 +15,7 @@ namespace Web.Application.Mapping
         public void Register(TypeAdapterConfig config)
         {
             TypeAdapterConfig<AppUser, UserDto>.NewConfig();
-                 
+            TypeAdapterConfig<UserDto, AppUser>.NewConfig();
         }
     
     
