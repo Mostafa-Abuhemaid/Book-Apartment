@@ -108,6 +108,7 @@ namespace Web.APIs
             app.UseAuthorization();
 
             app.MapControllers();
+            app.UseStaticFiles();
 
             app.Run();
         }

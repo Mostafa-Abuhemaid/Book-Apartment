@@ -23,7 +23,7 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
         public int? MaxPrice { get; set; }
         public string? Floor { get; set; } // "الارضي", "1", "2", ...
         public bool? HasWifi { get; set; }
-        public bool? IsFurnished { get; set; }  // مفروشة ولا لاء 
+        
         public ThereIsInstallment? ThereIsInstallment { get; set; } = null;
         public int PageSize { get; set; }
         public int PageNumber { get; set; }

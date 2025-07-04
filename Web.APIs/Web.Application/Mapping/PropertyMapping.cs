@@ -21,6 +21,13 @@ namespace Web.Application.Mapping
              : $"http://realestateunits.runasp.net/Property/{src.MainImage}");
             ///////////////////////////////////////////////////////////////////
             config.NewConfig<Property, GetPropertyDto>()
+                  .Map(dest=>dest.OwnerName,src=>src.Owner.FullName)
+                 .Map(dest => dest.OwnerImage,
+     src => string.IsNullOrEmpty(src.Owner.ProfileImage)
+            ? null
+            : $"http://realestateunits.runasp.net/User/{src.Owner.ProfileImage}")
+
+
                 .Map(dest => dest.Images,
          src => src.Images
                   .Where(img => !string.IsNullOrEmpty(img.ImageUrl)) 

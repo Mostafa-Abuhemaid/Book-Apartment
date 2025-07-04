@@ -51,8 +51,7 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
             if (request.MaxPrice.HasValue)
                 query = query.Where(p => p.Price <= request.MaxPrice.Value);
 
-            if (request.IsFurnished.HasValue)
-                query = query.Where(p => p.IsFurnished == request.IsFurnished);
+
 
             if (!string.IsNullOrEmpty(request.Floor))
             {
@@ -93,8 +92,8 @@ namespace Web.Application.Features.Properties.Queries.Filter_Properties
                 CreatedAt=p.CreatedAt
                
             }).ToListAsync();
-
-            return new BaseResponse<List<GetAllPropertiesDto>>(true, "نتائج البحث ", propertyDtos, totalCount, request.PageNumber,request.PageSize);
+            var totalPage = (int)Math.Ceiling(totalCount/(double) request.PageSize);
+            return new BaseResponse<List<GetAllPropertiesDto>>(true, "نتائج البحث ", propertyDtos, totalCount, request.PageNumber,request.PageSize,totalPage);
         }
     }
 }

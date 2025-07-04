@@ -30,6 +30,15 @@ namespace Web.Application.Features.Properties.Queries.Get_All_Property
                 .OrderByDescending(p => p.Id) 
                 .AsQueryable();
 
+            if (request.IsFurnished != null)
+                query = query.Where(p => p.IsFurnished == request.IsFurnished);
+            if (request.RentType != null)
+                query = query.Where(p => p.RentType == request.RentType);
+
+            if (request.Type != null)
+                query = query.Where(p => p.Type == request.Type);
+
+
             int skip = (request.PageNumber - 1) * request.PageSize;
 
             var properties = await query
@@ -52,10 +61,11 @@ namespace Web.Application.Features.Properties.Queries.Get_All_Property
                    
                 })
                 .ToListAsync(cancellationToken);
-
-            return new BaseResponse<List<GetAllPropertiesDto>>(true, "تم جلب العقارات بنجاح", properties);
+            int totalCount = query.Count();
+            var totalPage = (int)Math.Ceiling(totalCount / (double)request.PageSize);
+            return new BaseResponse<List<GetAllPropertiesDto>>(true, "تم جلب العقارات بنجاح", properties, totalCount, request.PageNumber, request.PageSize, totalPage);
         }
-    
+
 
     }
 }

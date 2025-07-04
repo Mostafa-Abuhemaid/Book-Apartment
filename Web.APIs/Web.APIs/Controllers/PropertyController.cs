@@ -62,7 +62,7 @@ namespace Web.APIs.Controllers
             var query = new GetPropertyByIdRequestsQuery(Id);
             return Ok(await _mediator.Send(query));
         }
-        [HttpGet("Filter")]
+        [HttpPost("Filter")]
         public async Task<IActionResult> FilterProperties([FromBody] FilterPropertiesQuery query)
         {
             var result = await _mediator.Send(query);

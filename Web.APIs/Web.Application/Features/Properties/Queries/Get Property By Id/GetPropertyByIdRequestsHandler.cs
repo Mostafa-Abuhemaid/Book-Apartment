@@ -28,7 +28,10 @@ namespace Web.Application.Features.Properties.Queries.Get_Property_By_Id
 
         public async Task<BaseResponse<GetPropertyDto>> Handle(GetPropertyByIdRequestsQuery request, CancellationToken cancellationToken)
         {
-           var property = await _dbContext.Properties.Include(p=>p.Images).FirstOrDefaultAsync(x => x.Id == request.PropertyId);
+           var property = await _dbContext.Properties.
+                Include(p=>p.Images)
+                .Include(p=>p.Owner)
+                .FirstOrDefaultAsync(x => x.Id == request.PropertyId);
             if (property == null)
                 return new BaseResponse<GetPropertyDto>(false, "هذه الوحدة غير موجودة");
             var dto = property.Adapt<GetPropertyDto>();

@@ -82,8 +82,8 @@ namespace Web.Infrastructure.Service
             .Skip((PageNumber - 1) * PageSize)
             .Take(PageSize)
                 .ToListAsync();
-
-            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",pagedData ,totalCount,PageNumber,PageSize);
+            var totalPage = (int)Math.Ceiling(totalCount / (double)PageSize);
+            return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",pagedData ,totalCount,PageNumber,PageSize, totalPage);
         }
     }
 }

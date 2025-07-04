@@ -20,6 +20,9 @@ namespace Web.Application.Response
         public int? PageNumber { get; set; }
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public int? PageSize { get; set; }
+
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+        public int? TotalPage { get; set; }
         public BaseResponse(bool success, string message, T data)
         {
             Success = success;
@@ -32,7 +35,7 @@ namespace Web.Application.Response
             Success = success;
             Message = message;
         }
-        public BaseResponse(bool success, string message, T data, int totalCount,int pageNumber,int pageSize)
+        public BaseResponse(bool success, string message, T data, int totalCount,int pageNumber,int pageSize, int? totalPage)
         {
             Success = success;
             Message = message;
@@ -40,7 +43,7 @@ namespace Web.Application.Response
             TotalCount = totalCount;
             PageNumber = pageNumber;
             PageSize = pageSize;
-            
+            TotalPage= totalPage;
           
         }
     }

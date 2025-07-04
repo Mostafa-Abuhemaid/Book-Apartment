@@ -30,7 +30,7 @@ namespace Web.Application.Features.Properties.Queries.Requests_To_Add_Properties
        .AsNoTracking()
        .OrderByDescending(p => p.Id)
        .AsQueryable();
-            int totalCoute = query.Count();
+            int totalCount = query.Count();
             int skip = (request.PageNumber - 1) * request.PageSize;
 
             var properties = await query
@@ -48,8 +48,8 @@ namespace Web.Application.Features.Properties.Queries.Requests_To_Add_Properties
                    PropertyMainImage = p.MainImage != null ? $"{_configuration["BaseURL"]}/Property/{p.MainImage}" : null,
                })
 .ToListAsync(cancellationToken);
-
-            return new BaseResponse<List<RequestsToAddPropertiesDto>>(true, "تم جلب العقارات بنجاح", properties,totalCoute, request.PageNumber, request.PageSize);
+            var totalPage = (int)Math.Ceiling(totalCount / (double)request.PageSize);
+            return new BaseResponse<List<RequestsToAddPropertiesDto>>(true, "تم جلب العقارات بنجاح", properties,totalCount, request.PageNumber, request.PageSize, totalPage);
         }
     }
 }

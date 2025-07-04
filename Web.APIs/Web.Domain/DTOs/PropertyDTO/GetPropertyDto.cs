@@ -32,7 +32,8 @@ namespace Web.Domain.DTOs.PropertyDTO
         public string? MainImage { get; set; }
          
         public string OwnerId { get; set; }
-
+        public string OwnerName { get; set; }
+        public string OwnerImage { get; set; }
         public ICollection<string>? Images { get; set; } = new List<string>();
       
     }

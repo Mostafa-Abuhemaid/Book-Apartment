@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Azure.Core;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -73,10 +74,10 @@ namespace Web.Infrastructure.Service
                 })
         .ToListAsync();
 
-          
 
+            var totalPage = (int)Math.Ceiling(totalCount / (double)pageSize);
 
-            return new BaseResponse<List<UserDto>>(true, "Reached Users successfully", users, totalCount,pageNumber,pageSize);
+            return new BaseResponse<List<UserDto>>(true, "Reached Users successfully", users, totalCount,pageNumber,pageSize, totalPage);
         }
 
 
