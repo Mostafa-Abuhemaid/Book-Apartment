@@ -65,10 +65,8 @@ namespace Web.Infrastructure.Service
             var roles = await _userManager.GetRolesAsync(user);
             var res = new TokenDTO
             {
-                UserId = user.Id,
-                Email = user.Email,
-                
-              Name=user.UserName,
+                UserId = user.Id,               
+                Name=user.UserName,
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
             };
 
@@ -155,7 +153,7 @@ namespace Web.Infrastructure.Service
             {
                 UserId= user.Id,
                 Name = registerDto.FullName,
-                Email = registerDto.Email,
+             
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
             };
 
