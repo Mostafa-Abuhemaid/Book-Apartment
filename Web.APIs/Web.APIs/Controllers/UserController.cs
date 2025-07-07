@@ -48,5 +48,11 @@ namespace Web.APIs.Controllers
             var user = await _userService.GetAdminDetailsAsync();
             return user.Success ? Ok(user) : BadRequest(user);
         }
+        [HttpGet("SearshByUserName")]
+        public async Task<IActionResult> SearshForUsersAsync(string Name)
+        {
+            var user = await _userService.SearshForUsersAsync(Name);
+            return user.Success ? Ok(user) : BadRequest(user);
+        }
     }
 }

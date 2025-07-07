@@ -30,6 +30,7 @@ public class Property:BaseClass<int>
     public AvailabilityStatus? AvailabilityStatus { get; set; }
     public bool? HasWifi { get; set; }
     public bool IsActive {  get; set; }=false;
+    public PropertyState PropertyState { get; set; }
     public string? MainImage { get; set; }
     public ThereIsInstallment? ThereIsInstallment {  get; set; }
     public string OwnerId { get; set; }

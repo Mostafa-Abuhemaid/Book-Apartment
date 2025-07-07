@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Azure.Core;
+using FuzzySharp;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -115,5 +116,34 @@ namespace Web.Infrastructure.Service
             await _userManager.SetLockoutEndDateAsync(user, DateTimeOffset.UtcNow);
             return new BaseResponse<bool>(true, $"User {user.UserName} unlocked successfully");
         }
+
+        public async Task<BaseResponse<List<UserDto>>> SearshForUsersAsync(string UserName)
+        {
+            var prefix = UserName.Length >= 3 ? UserName.Substring(0, 3) : UserName;
+
+            var filteredUsers = await _userManager.Users
+               .Where(u => EF.Functions.Like(u.FullName.ToLower(), $"{prefix.ToLower()}%"))
+                .Take(200)
+                .ToListAsync();
+
+            var results = filteredUsers
+                .Select(u => new {
+                    User = u,
+                    Score = Fuzz.Ratio(u.FullName, UserName)
+                })
+                .Where(x => x.Score >= 70)
+                .OrderByDescending(x => x.Score)
+                .Select(x => new UserDto
+                {
+                    Id = x.User.Id,
+                    UserName = x.User.FullName,
+                    PhoneNumber = x.User.PhoneNumber,
+                    IsBlocked=x.User.LockoutEnd != null && x.User.LockoutEnd > DateTimeOffset.UtcNow
+                })
+                .ToList();
+
+            return new BaseResponse<List<UserDto>>(true, "تم الوصول الي البيانات بنجاح", results);
+        }
+
     }
 }
