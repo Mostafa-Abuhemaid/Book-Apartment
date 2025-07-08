@@ -131,7 +131,7 @@ namespace Web.Infrastructure.Service
                     User = u,
                     Score = Fuzz.Ratio(u.FullName, UserName)
                 })
-                .Where(x => x.Score >= 70)
+                .Where(x => x.Score >= 80)
                 .OrderByDescending(x => x.Score)
                 .Select(x => new UserDto
                 {

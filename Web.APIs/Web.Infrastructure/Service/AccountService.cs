@@ -26,7 +26,7 @@ namespace Web.Infrastructure.Service
         private readonly ITokenService _tokenService;
         private readonly IEmailService _emailService;
         private readonly IMemoryCache _memoryCache;
-       
+        private readonly IConfiguration _configuration;
         public AccountService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
             IConfiguration configuration, ITokenService tokenService,
            IMemoryCache memoryCache, IEmailService emailService)
@@ -36,6 +36,7 @@ namespace Web.Infrastructure.Service
             _tokenService = tokenService;         
             _memoryCache = memoryCache;
             _emailService = emailService;
+            _configuration = configuration;
         }
         public async Task<BaseResponse<string>> ForgotPasswordAsync(ForgetPasswordDto request)
         {
@@ -67,6 +68,10 @@ namespace Web.Infrastructure.Service
             {
                 UserId = user.Id,               
                 Name=user.UserName,
+                Role=roles.FirstOrDefault(),
+                UserImage = !string.IsNullOrEmpty(user.ProfileImage)
+                        ? $"{_configuration["BaseURL"]}/User/{user.ProfileImage}"
+                        : null,
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
             };
 
