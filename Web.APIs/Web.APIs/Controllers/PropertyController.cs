@@ -6,6 +6,7 @@ using Web.Application.Features.Properties.Commands.AddNewProperty;
 using Web.Application.Features.Properties.Commands.AddPropertyToFavorit;
 using Web.Application.Features.Properties.Commands.ApproveProperty;
 using Web.Application.Features.Properties.Commands.DeleteProperty;
+using Web.Application.Features.Properties.Commands.Edit_Property;
 using Web.Application.Features.Properties.Queries.Filter_Properties;
 using Web.Application.Features.Properties.Queries.Get_All_Property;
 using Web.Application.Features.Properties.Queries.Get_Property_By_Id;
@@ -88,6 +89,13 @@ namespace Web.APIs.Controllers
         {
             var property = new ApprovePropertyCommand(id);
             var result = await _mediator.Send(property);
+            return Ok(result);
+        }
+
+        [HttpPut()]
+        public async Task<IActionResult> EditProperty([FromBody] EditPropertyCommand command)
+        {
+            var result = await _mediator.Send(command);
             return Ok(result);
         }
 

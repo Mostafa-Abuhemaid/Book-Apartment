@@ -15,6 +15,7 @@ namespace Web.Domain.Entites
         public string UserId { get; set; } 
         public AppUser User { get; set; } 
        
+        public string Notes { get; set; }
         public string? ConfirmedBy { get; set; }
         public bool IsConfirmed { get; set; } = false;
     }
