@@ -11,6 +11,7 @@ using Web.Application.Features.Properties.Queries.Filter_Properties;
 using Web.Application.Features.Properties.Queries.Get_All_Property;
 using Web.Application.Features.Properties.Queries.Get_Property_By_Id;
 using Web.Application.Features.Properties.Queries.GetFavorit;
+using Web.Application.Features.Properties.Queries.Property_Dashboard;
 using Web.Application.Features.Properties.Queries.Requests_To_Add_Properties;
 using Web.Application.Response;
 using Web.Domain.DTOs.PropertyDTO;
@@ -62,6 +63,12 @@ namespace Web.APIs.Controllers
         {
             var query = new GetPropertyByIdRequestsQuery(Id);
             return Ok(await _mediator.Send(query));
+        }
+        [HttpGet("GetPropertyOnDashboard")]
+        public async Task<IActionResult> GetPropertyOnDashboard([FromQuery] PropertyDashboardQuery dto)
+        {
+           
+            return Ok(await _mediator.Send(dto));
         }
         [HttpPost("Filter")]
         public async Task<IActionResult> FilterProperties([FromBody] FilterPropertiesQuery query)
