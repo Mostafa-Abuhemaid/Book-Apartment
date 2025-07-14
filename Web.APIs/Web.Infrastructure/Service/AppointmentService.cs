@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Web.Application.Response;
 using Web.Domain.DTOs.AppointmentDto;
@@ -50,9 +51,14 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<bool>(true, "تم تقديم الطلب بنجاح ");
         }
 
-        public Task<BaseResponse<bool>> DeleteAppointmentAsync(string id)
+        public async Task<BaseResponse<bool>> DeleteAppointmentAsync(int id)
         {
-            throw new NotImplementedException();
+            var query = await _dbContext.Appointments.FirstOrDefaultAsync(x=>x.Id==id);
+            if (query == null)
+                return new BaseResponse<bool>(false, "لا يوجد طلب معاينة بهذا الرقم ");
+            _dbContext.Appointments.Remove(query);
+            await _dbContext.SaveChangesAsync();
+            return new BaseResponse<bool>(true, "تم حذف طلب المعانية ");
         }
 
         public async Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync(int PageNumber, int PageSize)
@@ -65,15 +71,19 @@ namespace Web.Infrastructure.Service
             Tilte = a.Property.Title,
             OwnerName = a.Property.Owner.FullName,
             OwnerPhone = a.Property.Owner.PhoneNumber,
-            MainImage = a.Property.MainImage != null
-                ? $"{_configuration["BaseURL"]}/Property/{a.Property.MainImage}"
-                : null,
+            OwnerImage = a.Property.Owner.ProfileImage != null
+                ? $"{_configuration["BaseURL"]}/User/{a.Property.Owner.ProfileImage}"
+                : null,           
             PropertyType = a.Property.PropertyType,
             RequesterId = a.UserId,
             RequesterName=a.User.FullName,
             RequesterPhone=a.User.PhoneNumber,
-            CreatedAt= a.CreatedAt
-
+            RequesterImage= a.User.ProfileImage != null
+                ? $"{_configuration["BaseURL"]}/User/{a.User.ProfileImage}"
+                : null,
+            CreatedAt = a.CreatedAt,
+            Notes = a.Notes
+          
         });
 
             int totalCount = await query.CountAsync();

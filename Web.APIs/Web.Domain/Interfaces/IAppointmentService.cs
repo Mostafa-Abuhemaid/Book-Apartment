@@ -12,7 +12,7 @@ namespace Web.Domain.Interfaces
     {
         Task<BaseResponse<bool>> AddNewAppointmentAsync(CreateAppointmentDto dto);
         Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync(int PageNumber, int PageSize);
-        Task<BaseResponse<bool>> DeleteAppointmentAsync(string id);
+        Task<BaseResponse<bool>> DeleteAppointmentAsync(int id);
         
     }
 }

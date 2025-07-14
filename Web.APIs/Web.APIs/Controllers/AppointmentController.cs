@@ -29,5 +29,11 @@ namespace Web.APIs.Controllers
             var result = await _appointmentService.GetAllAppointmentAsync( PageNumber,  PageSize);
             return result.Success ? Ok(result) : BadRequest(result);
         }
+        [HttpDelete()]
+        public async Task<IActionResult> DeleteAppointmentbyId(int id)
+        {
+            var result = await _appointmentService.DeleteAppointmentAsync(id);
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
     }
 }

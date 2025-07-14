@@ -44,7 +44,7 @@ namespace Web.Application.Features.Properties.Commands.DeleteProperty
 
             _context.Properties.Remove(property);
             await _context.SaveChangesAsync(cancellationToken);
-            Console.WriteLine($" count the photoes after delete : {property.Images?.Count}");
+           
 
             return new BaseResponse<bool>(true, "تم حذف العقار بنجاح");
         }
