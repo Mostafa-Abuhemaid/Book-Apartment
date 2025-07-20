@@ -20,10 +20,11 @@ namespace Web.Application.Features.Notification.Commands.AddNewNotification
             var Not = new Notifications
             {
                 Title= request.Title,
-                Description = request.Description
-                
+                Description = request.Description,
+                CreatedAt= DateTime.UtcNow,
+
             };
-           await _unitOfWork.Repository<int, Notifications>().AddAsync(Not);
+            await _unitOfWork.Repository<int, Notifications>().AddAsync(Not);
             await _unitOfWork.SaveChangesAsync();
 
             return new BaseResponse<string>(true, "Notification added successfully!");

@@ -68,7 +68,7 @@ namespace Web.Infrastructure.Service
                 return new BaseResponse<bool>(false, "لا يوجد طلب معاينة بهذا الرقم ");
             query.Notes=Notes;
             await _dbContext.SaveChangesAsync();
-            return new BaseResponse<bool>(false, "تم تعديل الملاحظات بنجاح ");
+            return new BaseResponse<bool>(true, "تم تعديل الملاحظات بنجاح ");
         }
 
         public async Task<BaseResponse<List<GetAppointmentDto>>> GetAllAppointmentAsync(int PageNumber, int PageSize)
