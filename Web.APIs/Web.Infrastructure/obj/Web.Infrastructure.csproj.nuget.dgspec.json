@@ -49,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "FuzzySharp": {
               "target": "Package",
               "version": "[2.0.2, )"

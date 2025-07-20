@@ -3,6 +3,8 @@ using MediatR;
 using Web.Application.Response;
 using Web.Domain.Repositories;
 using Web.Domain.Entites;
+using FirebaseAdmin.Messaging;
+using Web.Domain.DTOs.NotificationDto;
 namespace Web.Application.Features.Notification.Commands.AddNewNotification
 {
     public class AddNotificationHandler : IRequestHandler<AddNotificationQuery, BaseResponse<string>>
@@ -24,10 +26,21 @@ namespace Web.Application.Features.Notification.Commands.AddNewNotification
                 CreatedAt= DateTime.UtcNow,
 
             };
+            var message = new Message()
+            {
+                Topic = "AllUsers",
+                Notification = new FirebaseAdmin.Messaging.Notification 
+                {
+                    Title = request.Title,
+                    Body = request.Description
+                }
+            };
+
+            string response = await FirebaseMessaging.DefaultInstance.SendAsync(message);
             await _unitOfWork.Repository<int, Notifications>().AddAsync(Not);
             await _unitOfWork.SaveChangesAsync();
 
-            return new BaseResponse<string>(true, "Notification added successfully!");
+            return new BaseResponse<string>(true, "Notification added successfully");
         }
     }
 }

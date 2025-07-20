@@ -18,6 +18,8 @@ using Web.Domain.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
 
 namespace Web.APIs
 {
@@ -93,6 +95,11 @@ namespace Web.APIs
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IAppointmentService, AppointmentService>();  
             builder.Services.AddMemoryCache();
+
+            FirebaseApp.Create(new AppOptions()
+            {
+                Credential = GoogleCredential.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "malaz-f18ca-firebase-adminsdk-fbsvc-06b91e997d.json")),
+            });
             var app = builder.Build();
 
             if (app.Environment.IsDevelopment())
