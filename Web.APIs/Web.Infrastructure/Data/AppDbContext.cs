@@ -21,7 +21,7 @@ namespace Web.Infrastructure.Data
         public DbSet<PropertyReview> PropertyReviews { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
-
+        public DbSet<Notifications> Notifications { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

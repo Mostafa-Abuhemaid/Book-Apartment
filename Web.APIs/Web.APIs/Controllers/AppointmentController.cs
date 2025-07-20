@@ -35,5 +35,11 @@ namespace Web.APIs.Controllers
             var result = await _appointmentService.DeleteAppointmentAsync(id);
             return result.Success ? Ok(result) : BadRequest(result);
         }
+        [HttpPut()]
+        public async Task<IActionResult> EditAppointmentbyId(int id,string Notes)
+        {
+            var result = await _appointmentService.EditAppointmentAsync(id, Notes);
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
     }
 }
