@@ -14,6 +14,7 @@ using Web.Domain.DTOs.AppointmentDto;
 using Web.Domain.Entites;
 using Web.Domain.Interfaces;
 using Web.Infrastructure.Data;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Web.Infrastructure.Service
 {
@@ -108,5 +109,35 @@ namespace Web.Infrastructure.Service
             return new BaseResponse<List<GetAppointmentDto>>(true, "تم جلب حميع المقابلات  بنجاح",pagedData ,totalCount,PageNumber,PageSize, totalPage);
         }
 
+        public async Task<BaseResponse<GetAppointmentDto>> GetByIdAppointmentAsync(int id)
+        {
+            var query = await _dbContext.Appointments.
+                Include(a=>a.User).
+                Include(a => a.Property)
+                .FirstOrDefaultAsync(x => x.Id == id);
+            if (query == null)
+                return new BaseResponse<GetAppointmentDto>(false, "لا يوجد طلب معاينة بهذا الرقم ");
+            var AppDto = new GetAppointmentDto
+            {
+                Id = query.Id,
+                PropertyId = query.Property.Id,
+                Tilte = query.Property.Title,
+                OwnerName = query.Property.Owner.FullName,
+                OwnerPhone = query.Property.Owner.PhoneNumber,
+                OwnerImage = query.Property.Owner.ProfileImage != null
+              ? $"{_configuration["BaseURL"]}/User/{query.Property.Owner.ProfileImage}"
+              : null,
+                PropertyType = query.Property.PropertyType,
+                RequesterId = query.UserId,
+                RequesterName = query.User.FullName,
+                RequesterPhone = query.User.PhoneNumber,
+                RequesterImage = query.User.ProfileImage != null
+              ? $"{_configuration["BaseURL"]}/User/{query.User.ProfileImage}"
+              : null,
+                CreatedAt = query.CreatedAt,
+                Notes = query.Notes
+            };
+            return new BaseResponse<GetAppointmentDto>(true, "تم الوصول الي طلب المعاينة بنجاح ", AppDto);
+        }
     }
 }

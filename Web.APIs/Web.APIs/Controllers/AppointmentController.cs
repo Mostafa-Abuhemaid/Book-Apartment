@@ -41,5 +41,11 @@ namespace Web.APIs.Controllers
             var result = await _appointmentService.EditAppointmentAsync(id, Notes);
             return result.Success ? Ok(result) : BadRequest(result);
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAppointmentbyId(int id)
+        {
+            var result = await _appointmentService.GetByIdAppointmentAsync(id);
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
     }
 }
