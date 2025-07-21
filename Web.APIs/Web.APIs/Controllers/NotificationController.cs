@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Web.Application.Features.Notification.Commands.AddNewNotification;
+using Web.Application.Features.Notification.Commands.DeleteNotification;
 using Web.Application.Features.Notification.Queries.Get_All_Notification;
 using Web.Application.Features.Properties.Commands.AddNewProperty;
 
@@ -25,6 +26,12 @@ namespace Web.APIs.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllNorification([FromQuery] GetAllNotificationQuery command)
         {
+            return Ok(await _mediator.Send(command));
+        }
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> DeleteNorification([FromRoute]int Id)
+        {
+          var command=new  DeleteNotificationCommand(Id);
             return Ok(await _mediator.Send(command));
         }
     }
