@@ -33,8 +33,9 @@ namespace Web.Application.Features.Notification.Queries.Get_All_Notification
                 .Skip(skip)
                 .Take(request.PageSize)
                 .ToListAsync(cancellationToken);
-
-            return new BaseResponse<List<Notifications>>(true, "تم الوصول إلى الإشعارات السابقة", notifications);
+            var TotalCount = await _dbContext.Notifications.CountAsync();
+            var totalPage = (int)Math.Ceiling(TotalCount / (double)request.PageSize);
+            return new BaseResponse<List<Notifications>>(true, "تم الوصول إلى الإشعارات السابقة", notifications,TotalCount,request.PageNumber,request.PageNumber,totalPage);
         }
 
     }
