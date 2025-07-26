@@ -22,6 +22,8 @@ namespace Web.Infrastructure.Data
         public DbSet<Favorite> Favorites { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Notifications> Notifications { get; set; }
+        public DbSet<ChatMessage> ChatMessages { get; set; }
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -69,6 +71,14 @@ namespace Web.Infrastructure.Data
                 .WithMany()
                 .HasForeignKey(a => a.PropertyId)
                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<ChatMessage>()
+                .HasIndex(c => new { c.SenderUserId, c.ReceiverUserId, c.CreatedAt });
+
+            builder.Entity<ChatMessage>()
+             .HasIndex(c => new { c.ReceiverUserId, c.SenderUserId, c.CreatedAt });
+            
+
         }
     }
 }
