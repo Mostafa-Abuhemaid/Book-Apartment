@@ -20,6 +20,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
+using Web.Application.Hubs;
 
 namespace Web.APIs
 {
@@ -95,6 +96,17 @@ namespace Web.APIs
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IAppointmentService, AppointmentService>();  
             builder.Services.AddMemoryCache();
+            builder.Services.AddSignalR();
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials()
+                          .SetIsOriginAllowed(_ => true); 
+                });
+            });
 
             FirebaseApp.Create(new AppOptions()
             {
@@ -116,7 +128,7 @@ namespace Web.APIs
 
             app.MapControllers();
             app.UseStaticFiles();
-
+            app.MapHub<ChatHub>("/chatHub");
             app.Run();
         }
     }

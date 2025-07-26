@@ -1,0 +1,14 @@
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Web.Application.Response;
+using Web.Domain.Entites;
+
+namespace Web.Application.Features.ChatMassage.Queries.GetAllMassage
+{
+    public record GetChatHistoryCommand(string userId, string otherUserId) :IRequest<BaseResponse<List<ChatMessage>>>;
+  
+}
