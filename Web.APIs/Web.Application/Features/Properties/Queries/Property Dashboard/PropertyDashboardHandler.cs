@@ -33,8 +33,7 @@ namespace Web.Application.Features.Properties.Queries.Property_Dashboard
                .OrderByDescending(p => p.Id)
                .AsQueryable();
 
-            if (request.PropertyType != null)
-                query = query.Where(p => p.PropertyType == request.PropertyType);
+         
             if (request.PropertySaleStatus != null)
                 query = query.Where(p => p.PropertySaleStatus == request.PropertySaleStatus);
             if (request.PropertyRentStatus != null)

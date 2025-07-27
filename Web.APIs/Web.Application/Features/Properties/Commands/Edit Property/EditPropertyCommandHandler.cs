@@ -25,14 +25,14 @@ namespace Web.Application.Features.Properties.Commands.Edit_Property
           
             property.Title = request.Title ?? property.Title;
             property.Description = request.Description ?? property.Description;
-            property.Type = request.Type;
+            property.Type = request.Type ?? property.Type;
             property.Rooms = request.Rooms ?? property.Rooms;
             property.Bathrooms = request.Bathrooms ?? property.Bathrooms;
             property.Area = request.Area ?? property.Area;
             property.Price = request.Price ?? property.Price;
             property.Floor = request.Floor ?? property.Floor;
             property.IsFurnished = request.IsFurnished ?? property.IsFurnished;
-            property.PropertyType = request.PropertyType;
+            property.PropertyType = request.PropertyType ?? property.PropertyType;
             property.Governorate = request.Governorate ?? property.Governorate;
             property.City = request.City ?? property.City;
             property.RentType = request.RentType ?? property.RentType;

@@ -10,14 +10,14 @@ namespace Web.Application.Features.Properties.Commands.Edit_Property
 
         public string? Title { get; set; }
         public string? Description { get; set; }
-        public PropertyNature Type { get; set; }
+        public PropertyNature? Type { get; set; }
         public string? Rooms { get; set; }
         public string? Bathrooms { get; set; }
         public double? Area { get; set; }
         public int? Price { get; set; }
         public string? Floor { get; set; }
         public bool? IsFurnished { get; set; }
-        public PropertyType PropertyType { get; set; }
+        public PropertyType? PropertyType { get; set; }
         public string? Governorate { get; set; }
         public string? City { get; set; }
         public RentType? RentType { get; set; }
