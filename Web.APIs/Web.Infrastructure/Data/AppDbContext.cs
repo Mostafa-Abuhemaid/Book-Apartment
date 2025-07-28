@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Web.Domain.Entites;
@@ -23,7 +24,7 @@ namespace Web.Infrastructure.Data
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Notifications> Notifications { get; set; }
         public DbSet<ChatMessage> ChatMessages { get; set; }
-        
+        public DbSet<Chat> Chats { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -77,7 +78,20 @@ namespace Web.Infrastructure.Data
 
             builder.Entity<ChatMessage>()
              .HasIndex(c => new { c.ReceiverUserId, c.SenderUserId, c.CreatedAt });
-            
+
+            builder.Entity<Chat>(entity =>
+            {
+              
+                entity.HasIndex(c => new { c.FirstUserId, c.SecondUserId })
+                      .IsUnique();
+
+               
+                entity.HasMany(c => c.Messages)
+                      .WithOne(m => m.Chat)
+                      .HasForeignKey(m => m.ChatId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
 
         }
     }

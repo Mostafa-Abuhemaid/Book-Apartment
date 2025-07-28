@@ -33,7 +33,7 @@ namespace Web.Application.Features.ChatMassage.Commands.AddNewMassage
                 Content = request.Content
             };
 
-            _unitOfWork.Repository<int,ChatMessage>().AddAsync(message);
+         await  _unitOfWork.Repository<int,ChatMessage>().AddAsync(message);
             await _unitOfWork.SaveChangesAsync();
             await _hubContext.Clients.User(request.SenderUserId).SendAsync("MessageSent", message);
             await _hubContext.Clients.User(request.ReceiverUserId).SendAsync("ReceiveMessage", message);

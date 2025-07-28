@@ -5,8 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Web.Application.Features.ChatMassage.Commands.AddNewMassage;
 using Web.Application.Features.ChatMassage.Commands.DeleteMassage;
+using Web.Application.Features.ChatMassage.Queries.GatAllChats;
 using Web.Application.Features.ChatMassage.Queries.GetAllMassage;
 using Web.Application.Features.Notification.Commands.AddNewNotification;
+using Web.Application.Response;
 using Web.Domain.DTOs.ChatMassageDto;
 
 namespace Web.APIs.Controllers
@@ -54,6 +56,17 @@ namespace Web.APIs.Controllers
                 return Unauthorized("المستخدم غير مصدق.");
             var massage = new GetChatHistoryCommand(userId,otherUserId);
             return Ok(await _mediator.Send(massage));
+        }
+        [HttpGet("GetAllChats")]
+        public async Task<IActionResult> GetAllChats()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var command = new GetAllChatsCommand ( userId );
+
+            var result = await _mediator.Send(command);
+
+            return Ok(result);
         }
     }
 }
