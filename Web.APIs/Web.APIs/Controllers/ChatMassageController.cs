@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Web.Application.Features.ChatMassage.Commands.AddNewMassage;
 using Web.Application.Features.ChatMassage.Commands.DeleteMassage;
+using Web.Application.Features.ChatMassage.Commands.ReadChatMessages;
 using Web.Application.Features.ChatMassage.Queries.GatAllChats;
 using Web.Application.Features.ChatMassage.Queries.GetAllMassage;
 using Web.Application.Features.Notification.Commands.AddNewNotification;
@@ -63,6 +64,16 @@ namespace Web.APIs.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var command = new GetAllChatsCommand ( userId );
+
+            var result = await _mediator.Send(command);
+
+            return Ok(result);
+        }
+        [HttpPut("MakeAllMassageRead")]
+        public async Task<IActionResult> MakeAllMassageRead(int ChatId)
+        {
+          
+            var command = new ReadChatMessagesCommand(ChatId);
 
             var result = await _mediator.Send(command);
 
