@@ -15,5 +15,6 @@ namespace Web.Domain.DTOs.ChatMassageDto
 
         [Required]
         public string Content { get; set; } = default!;
+        public int ChatId { get; set; }
     }
 }

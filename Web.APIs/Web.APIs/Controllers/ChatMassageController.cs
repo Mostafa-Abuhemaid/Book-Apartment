@@ -34,7 +34,7 @@ namespace Web.APIs.Controllers
             var ReceiverUserId = GetUserId();
             if (string.IsNullOrEmpty(ReceiverUserId))
                 return Unauthorized("المستخدم غير مصدق");
-            var massage = new AddNewMassageCommand(ReceiverUserId, dto.ReceiverUserId, dto.Content);
+            var massage = new AddNewMassageCommand(ReceiverUserId, dto.ReceiverUserId, dto.Content,dto.ChatId);
             return Ok(await _mediator.Send(massage));
         }
         [Authorize]

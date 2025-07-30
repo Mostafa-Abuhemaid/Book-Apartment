@@ -9,6 +9,6 @@ using Web.Application.Response;
 
 namespace Web.Application.Features.ChatMassage.Commands.AddNewMassage
 {
-    public record AddNewMassageCommand(string SenderUserId, string ReceiverUserId, string Content) : IRequest<BaseResponse<bool>>;
+    public record AddNewMassageCommand(string SenderUserId, string ReceiverUserId, string Content,int ChatId=0) : IRequest<BaseResponse<bool>>;
     
 }
