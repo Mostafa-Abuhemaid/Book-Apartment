@@ -56,6 +56,7 @@ namespace Web.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.DropForeignKey(
                 name: "FK_ChatMessages_Chats_ChatId",
                 table: "ChatMessages");
