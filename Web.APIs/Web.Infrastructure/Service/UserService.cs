@@ -48,7 +48,7 @@ namespace Web.Infrastructure.Service
 
 
             user.UserName = model.UserName;
-            user.Email = model.Email;
+           
 
 
             var result = await _userManager.UpdateAsync(user);
@@ -69,7 +69,7 @@ namespace Web.Infrastructure.Service
                 {
                     Id = user.Id,
                     UserName = user.FullName,
-                    Email = user.Email,
+                  
                     PhoneNumber = user.PhoneNumber,
                     IsBlocked = user.LockoutEnd != null && user.LockoutEnd > DateTimeOffset.UtcNow
                 })
@@ -90,7 +90,7 @@ namespace Web.Infrastructure.Service
             {
                 Id = u.Id,
                 UserName = u.FullName,
-                Email = u.Email,
+                
                 PhoneNumber = u.PhoneNumber,
             }).ToList();
 

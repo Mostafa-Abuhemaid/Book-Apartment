@@ -122,47 +122,50 @@ namespace Web.Infrastructure.Service
         public async Task<BaseResponse<TokenDTO>> RegisterAsync(RegisterDto registerDto)
         {
             if (registerDto.Password != registerDto.ConfirmPassword)
-                return new BaseResponse<TokenDTO>(false, "Password and confirmation password do not match.");
+                return new BaseResponse<TokenDTO>(false, "كلمة المرور وتأكيد كلمة المرور غير متطابقين");
 
-            if (!new EmailAddressAttribute().IsValid(registerDto.Email))
-                return new BaseResponse<TokenDTO>(false, "Invalid email format.");
+            var existingUser = await _userManager.Users
+          .AsNoTracking()
+          .FirstOrDefaultAsync(u => u.PhoneNumber == registerDto.PhoneNumber);
 
-            var existingUser = await _userManager.FindByEmailAsync(registerDto.Email);
             if (existingUser != null)
-                return new BaseResponse<TokenDTO>(false, "A user with this email already exists.");
+                 return new BaseResponse<TokenDTO>(false,"هذا الرقم مسجل بالفعل.");
 
-            var passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$";
-            if (!Regex.IsMatch(registerDto.Password, passwordPattern))
+           
+            if (registerDto.Password.Length<6)
             {
-                return new BaseResponse<TokenDTO>(false, "Password must contain uppercase and lowercase letters, numbers, and special characters.");
+                return new BaseResponse<TokenDTO>(false, "كلمة السر يجب الاتقل عن 6 ارقام او حروف");
             }
 
             var user = new AppUser
             {
 
-                UserName = registerDto.FullName,
-                Email = registerDto.Email,
                 FullName = registerDto.FullName,
-                PhoneNumber= registerDto.PhoneNumber
+                UserName = registerDto.PhoneNumber,
+                PhoneNumber = registerDto.PhoneNumber
                 
             };
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
             if (!result.Succeeded)
-                return new BaseResponse<TokenDTO>(false, "Failed to create account.");
+            {
+                var errors = string.Join(" | ", result.Errors.Select(e => e.Description));
+                return new BaseResponse<TokenDTO>(false, $"فشل إنشاء الحساب: {errors}");
+            }
 
-            await _userManager.AddToRoleAsync(user, Roles.User.ToString());
+            await _userManager.AddToRoleAsync(user, registerDto.Role.ToString());
 
             var response = new TokenDTO
             {
                 UserId= user.Id,
                 Name = registerDto.FullName,
-             
+             Role = registerDto.Role.ToString(),
+             UserImage=null,
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
             };
 
-            return new BaseResponse<TokenDTO>(true, "Account created successfully.", response);
+            return new BaseResponse<TokenDTO>(true, "تم إنشاء الحساب بنجاح.", response);
         }
 
 

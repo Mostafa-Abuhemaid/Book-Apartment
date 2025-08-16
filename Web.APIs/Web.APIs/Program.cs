@@ -1,4 +1,3 @@
-
 using FluentValidation;
 using MediatR.NotificationPublishers;
 using Microsoft.AspNetCore.Identity;
@@ -21,6 +20,8 @@ using System.Text;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
 using Web.Application.Hubs;
+using Microsoft.AspNetCore.SignalR;
+using Web.Application.Helpers;
 
 namespace Web.APIs
 {
@@ -30,20 +31,19 @@ namespace Web.APIs
         {
             var builder = WebApplication.CreateBuilder(args);
             var configuration = builder.Configuration;
-            // Add services to the container.
 
+            // Add services to the container.
             builder.Services.AddControllers();
-            
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddDbContext<AppDbContext>(options =>
-              options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddIdentity<AppUser, IdentityRole>()
-             .AddRoles<IdentityRole>()
-             .AddEntityFrameworkStores<AppDbContext>()
-             .AddDefaultTokenProviders();
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
             builder.Services.Configure<EmailDto>(configuration.GetSection("MailSettings"));
 
@@ -72,31 +72,56 @@ namespace Web.APIs
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.Zero
                 };
+
+                // ?????? ?? JWT ?? Query String ?? SignalR
+                o.Events = new JwtBearerEvents
+                {
+                    OnMessageReceived = context =>
+                    {
+                        var accessToken = context.Request.Query["access_token"];
+                        var path = context.HttpContext.Request.Path;
+                        if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/chatHub"))
+                        {
+                            context.Token = accessToken;
+                        }
+                        return Task.CompletedTask;
+                    }
+                };
             });
             #endregion
 
             #region Mediator Service
             builder.Services.AddMediatR(cfg =>
-			{
-				cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+            {
+                cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+                cfg.RegisterServicesFromAssembly(typeof(Application.AssemblyReference).Assembly);
+            });
+            #endregion
 
-                cfg.RegisterServicesFromAssembly(typeof(Application.AssemblyReference).Assembly); 
-
-			});
-			#endregion
             builder.Services.AddHttpContextAccessor();
-			builder.Services.AddValidatorsFromAssembly(typeof(Application.AssemblyReference).Assembly); 
-			builder.Services.AddMapster();
+            builder.Services.AddValidatorsFromAssembly(typeof(Application.AssemblyReference).Assembly);
+            builder.Services.AddMapster();
             TypeAdapterConfig.GlobalSettings.Scan(typeof(PropertyMapping).Assembly);
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-			builder.Services.AddTransient<IEmailService, EmailService>();
+            builder.Services.AddTransient<IEmailService, EmailService>();
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IAppointmentService, AppointmentService>();  
+            builder.Services.AddSingleton<IUserIdProvider, NameUserIdProvider>();
+            builder.Services.AddScoped<IAppointmentService, AppointmentService>();
             builder.Services.AddMemoryCache();
             builder.Services.AddSignalR();
+
+            builder.Services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 6;
+            });
+
             builder.Services.AddCors(options =>
             {
                 options.AddDefaultPolicy(policy =>
@@ -104,7 +129,7 @@ namespace Web.APIs
                     policy.AllowAnyHeader()
                           .AllowAnyMethod()
                           .AllowCredentials()
-                          .SetIsOriginAllowed(_ => true); 
+                          .SetIsOriginAllowed(_ => true);
                 });
             });
 
@@ -112,23 +137,25 @@ namespace Web.APIs
             {
                 Credential = GoogleCredential.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "malaz-f18ca-firebase-adminsdk-fbsvc-06b91e997d.json")),
             });
+
             var app = builder.Build();
 
-          // if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            // Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
+            app.UseCors();
             app.UseHttpsRedirection();
 
             app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.MapControllers();
             app.UseStaticFiles();
+
+            // SignalR Hub
             app.MapHub<ChatHub>("/chatHub");
+
             app.Run();
         }
     }

@@ -1,7 +1,11 @@
-﻿using MediatR;
+﻿using Azure.Core;
+using FirebaseAdmin.Messaging;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using System.Security.Claims;
 using Web.Application.Features.ChatMassage.Commands.AddNewMassage;
 using Web.Application.Features.ChatMassage.Commands.DeleteMassage;
@@ -9,6 +13,7 @@ using Web.Application.Features.ChatMassage.Commands.ReadChatMessages;
 using Web.Application.Features.ChatMassage.Queries.GatAllChats;
 using Web.Application.Features.ChatMassage.Queries.GetAllMassage;
 using Web.Application.Features.Notification.Commands.AddNewNotification;
+using Web.Application.Hubs;
 using Web.Application.Response;
 using Web.Domain.DTOs.ChatMassageDto;
 
@@ -19,9 +24,11 @@ namespace Web.APIs.Controllers
     public class ChatMassageController : ControllerBase
     {
         private readonly IMediator _mediator;
-        public ChatMassageController(IMediator mediator)
+        private readonly IHubContext<ChatHub> _hubContext;
+        public ChatMassageController(IMediator mediator, IHubContext<ChatHub> hubContext)
         {
             _mediator = mediator;
+            _hubContext = hubContext;
         }
         private string GetUserId()
         {
@@ -32,11 +39,16 @@ namespace Web.APIs.Controllers
         [HttpPost]   
         public async Task<IActionResult> AddNewMassage([FromBody] SendMassageDto dto)
         {
-            var ReceiverUserId = GetUserId();
-            if (string.IsNullOrEmpty(ReceiverUserId))
+            var SenderUserId = GetUserId();
+            if (string.IsNullOrEmpty(SenderUserId))
                 return Unauthorized("المستخدم غير مصدق");
-            var massage = new AddNewMassageCommand(ReceiverUserId, dto.ReceiverUserId, dto.Content,dto.ChatId);
-            return Ok(await _mediator.Send(massage));
+            var massage = new AddNewMassageCommand(SenderUserId, dto.ReceiverUserId, dto.Content,dto.ChatId);
+            var res = await _mediator.Send(massage);
+            var mass = res.Data;
+            await _hubContext.Clients.User(SenderUserId).SendAsync("MessageSent", mass);
+            await _hubContext.Clients.User(dto.ReceiverUserId).SendAsync("ReceiveMessage", mass);
+            return Ok(res);
+
         }
         [Authorize]
         [HttpDelete("{Id}")]
@@ -50,7 +62,7 @@ namespace Web.APIs.Controllers
         }
         [Authorize]
         [HttpGet("history/{otherUserId}")]
-        public async Task<IActionResult> AddNewMassage(string otherUserId)
+        public async Task<IActionResult> GetChatMassages(string otherUserId)
         {
             var userId = GetUserId();
             if (string.IsNullOrEmpty(userId))
