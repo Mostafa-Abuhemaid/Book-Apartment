@@ -22,6 +22,7 @@ using Google.Apis.Auth.OAuth2;
 using Web.Application.Hubs;
 using Microsoft.AspNetCore.SignalR;
 using Web.Application.Helpers;
+using Microsoft.AspNetCore.Diagnostics;
 
 namespace Web.APIs
 {
@@ -139,6 +140,32 @@ namespace Web.APIs
             });
 
             var app = builder.Build();
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            // Global error logging middleware
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler(errorApp =>
+                {
+                    errorApp.Run(async context =>
+                    {
+                        var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+                        var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
+
+                        if (exceptionHandlerPathFeature?.Error != null)
+                        {
+                            logger.LogError(exceptionHandlerPathFeature.Error,
+                                "Global exception caught at path: {Path}",
+                                exceptionHandlerPathFeature.Path);
+                        }
+
+                        context.Response.StatusCode = 500;
+                        await context.Response.WriteAsync("Internal Server Error");
+                    });
+                });
+            }
 
             // Swagger
             app.UseSwagger();

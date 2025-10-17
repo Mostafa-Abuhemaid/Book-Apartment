@@ -7,10 +7,22 @@ namespace Web.Application.Hubs
    
     public class ChatHub : Hub
     {
-       
-        public async Task SendMessage(string receiverUserId, object message)
+
+        public async Task SendMessage(string senderId, string receiverId, string content)
         {
-            await Clients.User(receiverUserId).SendAsync("ReceiveMessage", message);
+            var message = new
+            {
+                SenderUserId = senderId,
+                ReceiverUserId = receiverId,
+                Content = content,
+                CreatedAtFormatted = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Egypt Standard Time")).ToString("hh:mm tt")
+            };
+
+
+            await Clients.User(receiverId).SendAsync("ReceiveMessage", message);
+
+
+            await Clients.User(senderId).SendAsync("MessageSent", message);
         }
 
         public override async Task OnConnectedAsync()

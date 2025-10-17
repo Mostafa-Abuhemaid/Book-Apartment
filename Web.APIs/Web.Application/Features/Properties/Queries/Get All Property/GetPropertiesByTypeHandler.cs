@@ -27,7 +27,8 @@ namespace Web.Application.Features.Properties.Queries.Get_All_Property
             var query =  _context.Properties
                 .Where( p=>p.PropertyType == request.PropertyType)
                 .AsNoTracking()
-                .OrderByDescending(p => p.Id) 
+                .OrderByDescending(p => p.Id)
+                .Where(p => p.IsActive == true)
                 .AsQueryable();
 
             if (request.IsFurnished != null)
