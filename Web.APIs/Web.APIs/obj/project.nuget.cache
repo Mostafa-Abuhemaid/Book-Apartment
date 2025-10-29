@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SvkYZaHPQ+yStnkMJe+TjTtJqASu4gdQu9XKOJURz9ztkAQkNTqXfFnZlda6BtB7H3BgHVDE/YRwdqhQqS/SNw==",
+  "dgSpecHash": "nDbVYqDPPUc/B0R5oWs8JmKj/1Ri+STSg55zKnE1lVrCA4jFfrRum584seU5iLwuWat8btGHg+tgGeGzUW5G7A==",
   "success": true,
   "projectFilePath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.APIs\\Web.APIs.csproj",
   "expectedPackageFiles": [
@@ -133,8 +133,7 @@
     "C:\\Users\\CS\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\8.0.2\\microsoft.netcore.app.host.linux-x64.8.0.2.nupkg.sha512"
+    "C:\\Users\\CS\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

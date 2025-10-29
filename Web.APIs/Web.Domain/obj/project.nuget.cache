@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rvxM74Gp8FM8hy/woAFHNcO7kicOv/o/O/Y3Y1Gkr783R9KFqOjlDdFPBeEhRLgJsjAPMtMPxEd7fhmedaQRLg==",
+  "dgSpecHash": "cjXyUsV8Rx0/J39p+AXEkVUJ2P/R6xs5o4Wtm5/U/C8sq4BxTWXVo5Q6kOp3GOZZ+nHSW9fNvAmuKRfXGy1H8Q==",
   "success": true,
   "projectFilePath": "F:\\Projects\\Book-apartment\\Book-Apartment\\Web.APIs\\Web.Domain\\Web.Domain.csproj",
   "expectedPackageFiles": [
@@ -60,10 +60,6 @@
     "C:\\Users\\CS\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\runtime.any.system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\runtime.unix.system.private.uri\\4.3.0\\runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
@@ -83,7 +79,6 @@
     "C:\\Users\\CS\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\CS\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.reflection.metadata\\6.0.1\\system.reflection.metadata.6.0.1.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\system.runtime.caching\\6.0.0\\system.runtime.caching.6.0.0.nupkg.sha512",

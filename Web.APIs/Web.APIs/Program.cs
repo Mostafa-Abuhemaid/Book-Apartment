@@ -127,10 +127,14 @@ namespace Web.APIs
             {
                 options.AddDefaultPolicy(policy =>
                 {
-                    policy.AllowAnyHeader()
-                          .AllowAnyMethod()
-                          .AllowCredentials()
-                          .SetIsOriginAllowed(_ => true);
+                    policy.WithOrigins(
+                            "http://localhost:5000",          
+                            "http://localhost:3000",          
+                            "https://maalaz.netlify.app"      
+                        )
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials();
                 });
             });
 
@@ -172,13 +176,15 @@ namespace Web.APIs
             app.UseSwaggerUI();
 
             app.UseCors();
+
+          app.UseStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
-            app.UseStaticFiles();
+           
 
             // SignalR Hub
             app.MapHub<ChatHub>("/chatHub");

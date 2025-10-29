@@ -27,16 +27,18 @@ namespace Web.Infrastructure.Service
         private readonly IEmailService _emailService;
         private readonly IMemoryCache _memoryCache;
         private readonly IConfiguration _configuration;
+        private readonly RoleManager<IdentityRole> _roleManager;
         public AccountService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
             IConfiguration configuration, ITokenService tokenService,
-           IMemoryCache memoryCache, IEmailService emailService)
+           IMemoryCache memoryCache, IEmailService emailService, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
-            _signInManager = signInManager; 
-            _tokenService = tokenService;         
+            _signInManager = signInManager;
+            _tokenService = tokenService;
             _memoryCache = memoryCache;
             _emailService = emailService;
             _configuration = configuration;
+            _roleManager = roleManager;
         }
         public async Task<BaseResponse<string>> ForgotPasswordAsync(ForgetPasswordDto request)
         {
@@ -125,49 +127,51 @@ namespace Web.Infrastructure.Service
                 return new BaseResponse<TokenDTO>(false, "كلمة المرور وتأكيد كلمة المرور غير متطابقين");
 
             var existingUser = await _userManager.Users
-          .AsNoTracking()
-          .FirstOrDefaultAsync(u => u.PhoneNumber == registerDto.PhoneNumber);
+                .AsNoTracking()
+                .FirstOrDefaultAsync(u => u.PhoneNumber == registerDto.PhoneNumber);
 
             if (existingUser != null)
-                 return new BaseResponse<TokenDTO>(false,"هذا الرقم مسجل بالفعل.");
+                return new BaseResponse<TokenDTO>(false, "هذا الرقم مسجل بالفعل.");
 
-           
-            if (registerDto.Password.Length<6)
-            {
-                return new BaseResponse<TokenDTO>(false, "كلمة السر يجب الاتقل عن 6 ارقام او حروف");
-            }
+            if (registerDto.Password.Length < 6)
+                return new BaseResponse<TokenDTO>(false, "كلمة السر يجب ألا تقل عن 6 أرقام أو حروف");
 
             var user = new AppUser
             {
-
                 FullName = registerDto.FullName,
                 UserName = registerDto.PhoneNumber,
                 PhoneNumber = registerDto.PhoneNumber
-                
             };
 
-            var result = await _userManager.CreateAsync(user, registerDto.Password);
-
-            if (!result.Succeeded)
+           
+            var roleName = registerDto.Role.ToString();
+            if (!await _roleManager.RoleExistsAsync(roleName))
             {
-                var errors = string.Join(" | ", result.Errors.Select(e => e.Description));
+                await _roleManager.CreateAsync(new IdentityRole(roleName));
+            }
+
+            
+            var createResult = await _userManager.CreateAsync(user, registerDto.Password);
+            if (!createResult.Succeeded)
+            {
+                var errors = string.Join(" | ", createResult.Errors.Select(e => e.Description));
                 return new BaseResponse<TokenDTO>(false, $"فشل إنشاء الحساب: {errors}");
             }
 
-            await _userManager.AddToRoleAsync(user, registerDto.Role.ToString());
+           
+            await _userManager.AddToRoleAsync(user, roleName);
 
+            
             var response = new TokenDTO
             {
-                UserId= user.Id,
+                UserId = user.Id,
                 Name = registerDto.FullName,
-             Role = registerDto.Role.ToString(),
-             UserImage=null,
+                Role = registerDto.Role.ToString(),
+                UserImage = null,
                 Token = await _tokenService.GenerateTokenAsync(user, _userManager)
             };
-
             return new BaseResponse<TokenDTO>(true, "تم إنشاء الحساب بنجاح.", response);
         }
 
-
+        }
     }
-}
