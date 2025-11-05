@@ -1,4 +1,4 @@
-using FluentValidation;
+﻿using FluentValidation;
 using MediatR.NotificationPublishers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -123,20 +123,27 @@ namespace Web.APIs
                 options.Password.RequiredLength = 6;
             });
 
+            #region CORS Configuration
             builder.Services.AddCors(options =>
             {
-                options.AddDefaultPolicy(policy =>
+                options.AddPolicy("AllowFlutterWeb", policy =>
                 {
                     policy.WithOrigins(
-                            "http://localhost:5000",          
-                            "http://localhost:3000",          
-                            "https://maalaz.netlify.app"      
+                            "http://localhost:5200",
+                            "https://malaz.duckdns.org",
+                            "http://161.97.67.187",
+                            "https://malaz-dashboard.netlify.app"
                         )
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials();
                 });
             });
+            #endregion
+
+
+
+
 
             FirebaseApp.Create(new AppOptions()
             {
@@ -144,11 +151,13 @@ namespace Web.APIs
             });
 
             var app = builder.Build();
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            // Global error logging middleware
+
+            // ✅ Global error logging middleware
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler(errorApp =>
@@ -171,25 +180,37 @@ namespace Web.APIs
                 });
             }
 
-            // Swagger
+           
             app.UseSwagger();
             app.UseSwaggerUI();
 
-            app.UseCors();
+            app.UseStaticFiles();
+            app.UseRouting();
 
-          app.UseStaticFiles();
-            app.UseHttpsRedirection();
+           
+            app.UseCors("AllowFlutterWeb");
+
+           
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Method == "OPTIONS")
+                {
+                    context.Response.StatusCode = 200;
+                    await context.Response.CompleteAsync();
+                    return;
+                }
+                await next();
+            });
 
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapControllers();
-           
 
-            // SignalR Hub
             app.MapHub<ChatHub>("/chatHub");
+            app.MapControllers();
 
             app.Run();
+
         }
     }
 }
