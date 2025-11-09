@@ -18,26 +18,26 @@ namespace Web.Application.Mapping
              .Map(dest => dest.MainImage,
          src => string.IsNullOrEmpty(src.MainImage)
              ? null
-             : $"http://realestateunits.runasp.net/Property/{src.MainImage}");
+             : $"https://malaz.duckdns.org/Property/{src.MainImage}");
             ///////////////////////////////////////////////////////////////////
             config.NewConfig<Property, GetPropertyDto>()
                   .Map(dest=>dest.OwnerName,src=>src.Owner.FullName)
                  .Map(dest => dest.OwnerImage,
      src => string.IsNullOrEmpty(src.Owner.ProfileImage)
             ? null
-            : $"http://realestateunits.runasp.net/User/{src.Owner.ProfileImage}")
+            : $"https://malaz.duckdns.org/User/{src.Owner.ProfileImage}")
 
 
                 .Map(dest => dest.Images,
          src => src.Images
                   .Where(img => !string.IsNullOrEmpty(img.ImageUrl)) 
-                  .Select(img => $"http://realestateunits.runasp.net/Property/{img.ImageUrl}")
+                  .Select(img => $"https://malaz.duckdns.org/Property/{img.ImageUrl}")
      )
     .AfterMapping((src, dest) =>
     {
         dest.MainImage = string.IsNullOrEmpty(src.MainImage)
             ? null
-            : $"http://realestateunits.runasp.net/Property/{src.MainImage}";
+            : $"https://malaz.duckdns.org/Property/{src.MainImage}";
     });
        ////////////////////////////////////////////////////////////////
        
@@ -45,7 +45,7 @@ namespace Web.Application.Mapping
     .Map(dest => dest.MainImage,
          src => string.IsNullOrEmpty(src.MainImage)
              ? null
-             : $"http://realestateunits.runasp.net/Property/{src.MainImage}");
+             : $"https://malaz.duckdns.org/Property/{src.MainImage}");
 
         }
     }

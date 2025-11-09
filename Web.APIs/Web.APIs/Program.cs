@@ -187,25 +187,17 @@ namespace Web.APIs
             app.UseStaticFiles();
             app.UseRouting();
 
-           
+
+            app.UseRouting();
+
+            // CORS هنا
             app.UseCors("AllowFlutterWeb");
 
-           
-            app.Use(async (context, next) =>
-            {
-                if (context.Request.Method == "OPTIONS")
-                {
-                    context.Response.StatusCode = 200;
-                    await context.Response.CompleteAsync();
-                    return;
-                }
-                await next();
-            });
+            // شيل الـ OPTIONS middleware خالص
+            // app.Use(async (context, next) => ... );
 
             app.UseAuthentication();
             app.UseAuthorization();
-
-
             app.MapHub<ChatHub>("/chatHub");
             app.MapControllers();
 
